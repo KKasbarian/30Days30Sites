@@ -16,6 +16,10 @@ body, html {
 	height: 100%;
 }
 
+#container {
+    text-align: center;
+}
+
 a {
     cursor: pointer;
 }
@@ -114,7 +118,78 @@ a {
 
 /* Main Section Stling */
 
+#main {
+    margin: 20px 0;
+}
 
+#main h1 {
+    margin-bottom: 8px;
+    font-size: 32px;
+    font-family: arial, sans-serif;
+}
+
+#main hr {
+    width: 70px;
+    margin: 0 auto 26px auto;
+    height: 4px;
+    background: dodgerblue;
+}
+
+#main p {
+    padding: 0 3px;
+    margin-bottom: 19px;
+    font-size: 20px;
+    font-family: helvetica, arial, sans-serif;
+}
+
+#main h2 {
+    margin-bottom: 8px;
+    font-size: 26px;
+    font-family: arial, sans-serif;
+}
+
+#main ul li {
+    padding: 5px 0;
+}
+
+#main ul li a {
+    color: #555;
+    opacity: 0.9;
+    text-decoration: none;
+}
+
+#main ul li a:hover {
+    color: #cecece;
+}
+
+@media screen and (min-width: 810px) {
+    #main h1 {
+        font-size: 37px;
+    }
+    
+    #main p {
+        width: 600px;
+        font-size: 23px;
+        margin: 0 auto;
+        margin-bottom: 18px;
+    }
+    
+    #main h2 {
+        font-size: 30px;
+        margin-bottom: 19px;
+    }
+    
+    #main ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        list-style: none;
+    }
+    
+    #main ul li {
+        width: 300px;
+    }
+}
 
 /* Footers Sections Styling */
 
