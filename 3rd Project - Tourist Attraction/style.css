@@ -1,0 +1,345 @@
+/* General Styling */
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	font: normal 16px sans-serif;
+	color: #555;
+}
+
+a{
+	text-decoration: none;
+	cursor: pointer;
+}
+
+a:hover{
+	opacity: 1;
+}
+
+a.btn{
+	color: #fff;
+	border-radius: 4px;
+    padding: 10px 9px;
+    margin-top: 10px;
+	text-transform: uppercase;
+	background-color: #444;
+	text-align: center;
+}
+
+hr{
+	width: 150px;
+	height: 2px;
+	background-color: #2196F3;
+	border: 0;
+	margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 30px 30px;
+}
+
+section h1 {
+    font-size: 45px;
+}
+
+section h3 {
+	color: #fcfcfc;
+	font: bold 32px arial, sans-serif;
+	text-align: center;
+}
+
+section p{
+	max-width: 900px;
+	text-align: justify;
+	margin-bottom: 10px;
+	padding: 0 20px;
+	line-height: 1.2;
+    font-size: 18px;
+}
+
+
+
+@media (max-width: 1000px){
+
+	section{
+		padding: 60px 50px;
+	}
+
+}
+
+@media (max-width: 600px){
+
+	section{
+		padding: 80px 30px;
+	}
+
+}
+
+/* Navigation Section Styling */
+
+header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: black;
+    background: #fff;
+	padding: 18px 100px;
+}
+
+header a {
+    color: black;
+    opacity: 0.7
+}
+
+header h2{
+	font-family: arial, sans-serif;
+}
+
+header nav{
+	display: flex;
+    list-style: none;
+}
+
+header nav li{
+	margin: 0 15px;
+}
+
+
+@media (max-width: 1000px){
+	header{
+		padding: 20px 50px;
+	}
+}
+
+
+@media (max-width: 700px){
+	header{
+		flex-direction: column;		
+	}
+
+	header h2{
+		margin-bottom: 15px;
+	}
+}
+
+
+
+/* Intro Section Styling */
+
+.hero{
+	position: relative;
+	justify-content: center;
+	min-height: 100vh;
+	color: #fff;
+	text-align: center;
+}
+
+.hero .background-image{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-color: #2196F3;
+	z-index: -1;
+}
+
+.hero .background-image:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #414a4f;
+	opacity: 0;
+}
+
+.hero h1{
+	font: bold 50px arial, sans-serif;
+	margin-bottom: 15px;
+}
+
+.hero h3{
+	font: normal 28px arial, sans-serif;
+	margin-bottom: 40px;
+}
+
+.hero a.btn{
+	padding: 20px 36px;
+}
+
+@media (max-width: 800px){
+
+	.hero{
+		min-height: 600px;
+	}
+    
+    .hero .background-image {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+	.hero h1{
+		font-size: 30px;
+	}
+
+	.hero h3{
+		font-size: 20px;
+	}
+
+	.hero a.btn{
+		padding: 15px 20px;
+	}
+
+}
+
+
+@media screen and (max-width: 800px) {
+    a.btn {
+        padding: 7px 10px;
+        width: 60%;
+        opacity: 0.9;
+    }
+    
+    a.btn:hover {
+        opacity: 1;
+    }
+    
+    section {
+        padding: 15px 0;
+    }
+    
+    section p {
+        text-align: justify;
+        line-height: 1;
+        padding: 5px 6px;
+        margin: 10px 0;
+    }
+    
+    section h1 {
+        text-align: center;
+        margin: 10px 0;
+    }
+}
+
+/* Footer Styling */
+
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+}
+
+footer h2 {
+    padding: 10px 0;
+}
+
+footer h2 a {
+    font-size: 26px;
+    font-family: arial, sans-serif;
+    color: whitesmoke;
+}
+
+footer p a {
+    color: whitesmoke;
+    opacity: 0.8;
+}
+
+footer p a:hover {
+    color: #fff;
+    opacity: 1;
+}
+
+footer .socials {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px;
+    margin: 10px;
+}
+
+footer .socials li {
+    padding: 5px;
+    margin: 0 5px;
+}
+
+footer .socials .fa {
+    padding: 10px;
+    font-size: 35px;
+    width: 45px;
+    color: white;
+    opacity: 0.8;
+}
+
+footer .fa-facebook:hover,
+footer .fa-github:hover,
+footer .fa-linkedin:hover {
+    opacity: 1;
+}
+
+footer p {
+    text-align: center;
+    font-size: 18px;
+    font-family: arial, sans-serif;
+    padding: 10px 0;
+}
+
+footer .fa-heart {
+    color: red;
+}
+
+footer .fa-code {
+    color: lightskyblue;
+}
+
+/* Go To Top Button Styling */
+
+body #myBtn {
+	position: fixed;
+	display: block;
+	bottom: 20px;
+	right: 50px;
+	color: white;
+	width: 60px;
+	height: 60px;
+	background: black;
+	border-bottom-left-radius: 50%;
+  	border-bottom-right-radius: 50%;
+  	border-top-right-radius: 50%;
+  	border-top-left-radius: 50%;
+    opacity: 0.85;
+  	z-index: 9999;
+}
+
+@media screen and (max-width: 710px) {
+
+    body #myBtn {
+            width: 40px;
+            height: 40px;
+            bottom: 10px;
+            right: 10px;
+        }
+
+        body #myBtn img {
+            width: 26px;
+            height: 26px;
+        }
+}

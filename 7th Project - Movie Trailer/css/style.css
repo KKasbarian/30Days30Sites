@@ -1,0 +1,387 @@
+/* Main */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+/* Background Cover Image */
+
+#container {
+    background: url(../images/bg-image.jpg);
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+    font-family: 'Rambla', arial, sans-serif;
+}
+
+/* Navigation Bar Styling Section */
+
+.overlay {  
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 60px;
+    z-index: 99;
+}
+
+#container span {
+    position: fixed;
+    top: 1%;
+    right: 3%;
+    font-size: 34px;
+    color: #000;
+}
+
+#container span:hover {
+    cursor: pointer;
+}
+
+/* Title and Caption Section Styling */
+
+#title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#title h1 a {
+    font-size: 43px;
+    font-weight: 700;
+    color: #000;
+}
+
+#title p {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: #333;
+    margin-top: 4px;
+}
+
+/* Social Section Styling */
+
+#social {
+    position: absolute;
+    bottom: 2px;
+    left: 16px;
+}
+
+#social h1 {
+    font-size: 25px;
+    font-family: 'Rambla', arial, sans-serif;
+    font-weight: 400;
+}
+
+#social ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5px 0 60px 0;
+}
+
+#social ul li {
+    font-size: 23px;
+    padding: 8px 9px;
+}
+
+#social ul li a i {
+    color: #fff;
+}
+
+#social ul li a i:hover {
+    opacity: 0.8;
+}
+
+/* Footer Text Section Styling */
+
+.footer {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    font-size: 15.5px;
+    font-family: arial, sans-serif;
+    margin: 10px auto 2px auto;
+}
+
+.footer a {
+    color: #fff;
+    opacity: 0.9;
+}
+
+.footer a:hover {
+    opacity: 1;
+}
+
+.fa-heart {
+    color: red;
+}
+
+.fa-code {
+    color: lightskyblue;
+}
+
+                /* Responsive Styling Section */
+
+/* Main */
+
+@media screen and (max-height: 530px) {
+    #title {
+        top: 40%;
+    }
+    #title h1 a {
+        font-size: 35px;
+    }
+    
+    #title p {
+        20px;
+    }
+}
+
+/* Navigation Bar Section */
+
+@media screen and (max-height: 650px) {
+    .overlay a {font-size: 30px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+/* Title and Caption Section */
+
+@media screen and (min-width: 480px) and (max-width: 840px) {
+    #title h1 a {
+        text-align: center;
+        font-size: 42px;
+    }
+}
+
+@media screen and (min-width: 841px) {
+    #title {
+        top: 40%;
+    }
+    
+    #title h1 a {
+        text-align: center;
+        font-size: 55px;
+    }
+    
+    #title p {
+        font-size: 40px;
+    }
+}
+
+/* Social Section */
+
+@media screen and (min-width: 670px) {
+    #social {
+        left: 8%;
+    }
+    
+    #social h1 {
+        opacity: 0.92;
+        font-size: 32px;
+    }
+    
+    #social ul li {
+        font-size: 35px;
+    }
+}
+
+/* Footer Text Section */
+
+@media screen and (min-width: 670px) {
+    .footer {
+        font-size: 21px;
+    }
+}
+
+
+        /**----- Synopsis Page Styling -----**/
+
+#synopsis-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#synopsis-txt h3 {
+    color: #000;
+    font-size: 29px;
+}
+
+#synopsis-txt h5 {
+    font-size: 20px;
+    font-family: arial, sans-serif;
+    color: #222;
+    margin: 4px auto;
+}
+
+#synopsis-txt p {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1;
+    color: #333;
+    background: #fff;
+    opacity: 0.7;
+}
+
+/* Synopsis Page Responsive Styling */
+
+@media screen and (min-width: 560px) and (max-width: 1080px) {
+    #synopsis-txt h3 {
+        font-size: 37px;
+    }
+    
+    #synopsis-txt h5 {
+        font-size: 30px;
+        color: #444;        
+    }
+    
+    #synopsis-txt p {
+        font-size: 19px;
+        color: #333;
+        background: #fff;
+        opacity: 0.7;
+    }
+}
+
+@media screen and (min-width: 1081px) {
+    #synopsis-txt h3 {
+        font-size: 52px;
+    }
+    
+    #synopsis-txt h5 {
+        font-size: 39px;
+    }
+    
+    #synopsis-txt p {
+        font-size: 27px;
+        color: #333;
+        background: #fff;
+        opacity: 0.7;
+    }
+}
+
+        /**----- Trailer Page Styling -----**/
+
+#trailer-vid {
+    text-align: center;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+}
+
+#trailer-vid h1 a {
+    color: #000;
+    font-size: 43px;
+}
+
+#trailer-vid p {
+    color: #333;
+    margin: 20px 0;
+    font-weight: bold;
+    font-family: arial, sans-serif;
+}
+
+
+/* Trailer Page Responsive Styling */
+
+@media screen and (max-width: 890px) {
+    #trailer-vid {
+        position: absolute;
+        top: 12%;
+    }
+    
+    #trailer-vid h1 a {
+    color: #000;
+    font-size: 29px;
+}
+
+#trailer-vid p {
+    color: #333;
+    margin: 10px 0;
+    font-weight: bold;
+    font-family: arial, sans-serif;
+}
+    
+    #trailer-vid iframe {
+        max-width: 100%;
+    }
+}
+
+        /**----- Gallery Page Styling -----**/
+
+
+
+
+
+
+/* Gallery Page Responsive Styling */
+
+
+
+
+
+

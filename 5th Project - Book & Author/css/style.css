@@ -1,0 +1,656 @@
+/* Main */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background: #e7ccb8;
+}
+
+li {
+    list-style: none;
+    color: #000;
+    font-size: 23px;
+    font-family: arial, sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    opacity: 0.9;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+.dash {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+hr {
+    width: 85%;
+    height: 3px;
+    background: #222;
+    margin: 22px auto 20px auto;
+    z-index: 99;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/* Main Section Styling */
+
+#main {
+    background: #58728d;
+}
+
+#main h1 {
+    padding-top: 14px;
+}
+
+#main h1 a {
+    font-size: 28px;
+    font-family: 'Open Sans', arial, sans-serif;
+}
+
+#main h4 {
+    text-align: right;
+    padding-right: 10px;
+    margin-bottom: 17px;
+}
+
+#main h4 a {
+    font-size: 16px;
+    font-family: arial, sans-serif;
+    color: #e7ceb0;
+}
+
+#main nav {
+    background: #46627e;
+}
+
+#main nav ul {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    padding: 7px 0;
+}
+
+#main nav ul li {
+    padding: 4px 0;
+    margin: 4px 0;
+}
+
+#main nav ul li a {
+    font-size: 19px;
+    padding: 7px;
+}
+
+#main nav ul li a:hover {
+    background: #58728d;
+    color: #ccc;
+}
+
+.credit {
+    width: 80%;
+    margin: 13px auto;
+    padding: 6px;
+    border: 2px solid #fff;
+    border-radius: 2px;
+}
+
+.credit img {
+    height: 300px;
+    border-radius: 4px;
+}
+
+.credit p {
+    font-size: 15px;
+    font-family: arial, sans-serif;
+    font-style: italic;
+}
+
+/* About Book Section Styling */
+
+#home {
+    background: #e7ceb0;
+}
+
+#home h1 {
+    font-size: 32px;
+    font-family: 'Roboto', arial, sans-serif;
+}
+
+#home img {
+    width: 77%;
+}
+
+#home .book-credit {
+    font-size: 15px;
+    font-style: italic;
+    font-family: arial, sans-serif;
+}
+
+#home .book-info {
+    text-align: justify;
+    font-size: 17px;
+    font-family: 'Open Sans', arial, sans-serif;
+    padding: 10px;
+    line-height: 1.3;
+}
+
+#home h5 {
+    font-size: 19px;
+    font-weight: 700;
+    font-family: monospace, arial, sans-serif;
+    margin: 7px 0;
+}
+
+#home ul {
+    text-align: justify;
+}
+
+#home ul li {
+    font-size: 20px;
+}
+
+#home ul .bold-title {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+#home h4 {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Open Sans', arial, sans-serif;
+    margin: 12px 0;
+}
+
+#home .first-line {
+    text-align: justify;
+    font-size: 17px;
+    font-family: 'Open Sans', arial, sans-serif;
+    padding: 2px 3px;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+/* Aside Section Styling */
+
+#more-books {
+    background: #38738f;
+    width: 96%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+
+#more-books h1 {
+    color: #eee;
+    font-size: 31px;
+    font-family: 'Open Sans', arial, sans-serif;
+    padding: 13px 0;
+}
+
+#more-books div {
+    background: #fff;
+    width: 65%;
+    padding: 10px 0 0 0;
+    margin: 16px auto;
+    border: 2px solid #fff;
+    border-radius: 12px;
+    opacity: ;
+}
+
+#more-books div img {
+    height: 270px;
+    border-radius: 9px;
+}
+
+#more-books div p {
+    background: #ccc;
+    font-size: 19px;
+    font-family: arial, sans-serif;
+    padding: 10px;
+    margin-top: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    opacity: 0.5;
+}
+
+/* Author Section Styling */
+
+#author {
+    background: #58728d;
+    margin: 20px 0 0 0;
+}
+
+#author h1 {
+    color: #fff;
+    font-size: 31px;
+    font-family: 'Open Sans', arial, sans-serif;
+    padding: 13px 0;
+    opacity: 0.9;
+}
+
+#author .dash {
+    color: #fff;
+}
+
+#author img {
+    width: 90%;
+}
+
+#author p.author-credit {
+    color: #fff;
+    font-size: 15px;
+    font-family: arial, sans-serif;
+    font-style: italic;
+    padding: 4px 0;
+    opacity: 0.97;
+}
+
+#author p.birth-credit {
+    color: #fff;
+    font-size: 16px;
+    font-family: arial, sans-serif;
+    padding: 4px 0;
+    opacity: 0.91;
+}
+
+#author p.about-author {
+    text-align: justify;
+    color: #fff;
+    font-size: 19px;
+    font-family: 'Roboto', arial, sans-serif;
+    padding: 12px 5px;
+    line-height: 1.3;
+    opacity: 0.99;
+}
+
+/* "Other" Section Styling */
+
+#other {
+    margin-bottom: 22px;
+}
+
+#other h1 {
+    font-size: 31px;
+    font-family: 'Open Sans', arial, sans-serif;
+    padding: 13px 0;
+    opacity: 0.9;
+}
+
+#other h2 {
+    font-size: 28px;
+    font-family: 'Roboto', arial, sans-serif;
+    padding: 10px 0 15px 0;
+}
+
+#other .other-card {
+    background: #fff;
+    width: 94%;
+    margin: 0 auto;
+    padding: 12px 0;
+    border-radius: 6px;
+}
+
+#other .other-card .info-list {
+    width: 80%;
+    padding: 11px 0;
+    margin: 10px auto;
+    border: 2px solid #000;
+    border-radius: 3px;
+}
+
+#other img {
+    width: 87%;
+    border-radius: 4px;
+}
+
+#other p {
+    padding-top: 10px;
+}
+
+#other p a {
+    color: #000;
+    font-size: 19px;
+    font-family: arial, sans-serif;
+    opacity: 0.9;
+}
+
+#other p a:hover {
+    color: #222;
+    opacity: 1;
+}
+
+/* Footer Section Styling */
+
+footer {
+    background: #333;
+    opacity: 0.95;
+}
+
+footer h1 {
+    padding: 12px 0;
+}
+
+footer h1 a {
+    font-size: 28px;
+    color: #fff;
+    font-family: 'Open Sans', arial, sans-serif;
+    opacity: 0.9;
+}
+
+footer h1 a:hover {
+    color: #ccc;
+    opacity: 1;
+}
+
+footer .info-list ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 0;
+}
+
+footer .info-list ul li {
+    padding: 4px 0;
+    margin: 4px 0;
+}
+
+footer .info-list ul li a {
+    font-size: 19px;
+    color: #ccc;
+    padding: 7px;
+    opacity: 0.9;
+}
+
+footer .info-list ul li a:hover {
+    color: #fff;
+    opacity: 0.95;
+}
+
+footer .socials {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px;
+}
+
+footer .socials .fa {
+    padding: 10px;
+    font-size: 35px;
+    width: 45px;
+    color: white;
+    opacity: 0.8;
+}
+
+footer .fa-facebook:hover,
+footer .fa-github:hover,
+footer .fa-linkedin:hover {
+    opacity: 1;
+}
+
+footer p {
+    text-align: center;
+    font-size: 18px;
+    font-family: arial, sans-serif;
+    padding: 10px 0;
+}
+
+footer .fa-heart {
+    color: red;
+}
+
+footer .fa-code {
+    color: lightskyblue;
+}
+
+footer.copy {
+    background: #555;
+    opacity: 0.96;
+}
+
+                /* Responsive Styling Section */
+
+/* General Section Styling */
+
+@media screen and (min-width: 710px) {
+    .hide {
+        display: none;
+    }
+}
+
+/* Main Section Styling */
+
+@media screen and (min-width: 710px) {
+    #main {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+        justify-content: center;
+        -webkit-justify-content: center;
+    }
+
+    #main .left-h {
+        margin-right: 90px;
+    }
+    
+    #main .left-h h1 a {
+        font-size: 24px;
+    }
+    
+    #main .left-h h4 {
+        margin-bottom: 7px;
+    }
+    
+    #main .right-h {
+        margin-left: 100px;
+    }
+    
+    #main nav {
+        background: none;
+    }
+    
+    #main nav ul li a {
+        padding: 18px 9px;
+    }
+    
+    #main nav ul li a:hover {
+        border-bottom: 2px solid #fff;
+    }
+}
+
+@media screen and (min-width: 1090px) {
+    #main .left-h {
+        margin-right: 320px;
+    }
+    
+    #main .right-h {
+        margin-left: 230px;
+    }
+}
+
+/* About Book Section Styling */
+
+@media screen and (min-width: 710px) {
+    .credit {
+        border: none;
+    }
+    
+    .credit img {
+        width: 50%;
+        height: auto;
+    }
+    
+    .credit p {
+        font-size: 21px;
+    }
+    
+    #home img {
+        width: 50%;
+    }
+    
+    #home .book-credit {
+        font-size: 21px;
+    }
+    
+    #home .book-info {
+        width: 75%;
+        margin: 0 auto;
+    }
+    
+    #home h5 {
+        font-size: 24px;
+    }
+    
+    #home ul li {
+        text-align: center;   
+    }
+    
+    #home h4 {
+        font-size: 25px;
+    }
+    
+    #home .first-line {
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+/* Aside Section Styling */
+
+@media screen and (min-width: 710px) {
+    #more-books {
+        width: 50%;
+        float: right;
+        margin-bottom: 30px;
+    }
+}
+
+/* More Section Styling */
+
+@media screen and (min-width: 710px) {
+    #other {
+        float: left;
+        width: 50%;
+    }
+    
+    #other .other-card .info-list {
+        width: 70%;
+    }
+    
+    #other img {
+        width: 50%;
+    }
+}
+
+/* Author Section Styling */
+
+@media screen and (min-width: 710px) {
+    #author {
+        padding: 20px 0;
+    }
+    
+    #author h1 {
+        font-size: 42px;
+    }
+    
+    #author img {
+        width: 56%;
+    }
+    
+    #author .author-card .author-credit {
+        font-size: 26px;
+    }
+    
+    #author .author-card .birth-credit {
+        font-size: 24px;
+    }
+    
+    #author .author-card .about-author {
+        text-align: center;
+        margin: 0 auto;
+        width: 78%;
+    }
+}
+
+/* Footer Section Responsive Styling */
+
+@media screen and (min-width: 710px) {
+    footer {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+        -webkit-align-content: stretch;
+        align-content: stretch;
+        padding: 13px 0;
+    }
+    
+    footer section {
+        width: 33%;
+    }
+    
+    footer .blue {
+        font-size: 52px;
+    }
+}
+
+/* Scroll To Top Button Styling*/
+
+body #myBtn {
+	position: fixed;
+	display: block;
+	bottom: 20px;
+	right: 50px;
+	color: white;
+	width: 60px;
+	height: 60px;
+	background: black;
+	border-bottom-left-radius: 50%;
+  	border-bottom-right-radius: 50%;
+  	border-top-right-radius: 50%;
+  	border-top-left-radius: 50%;
+    opacity: 0.85;
+  	z-index: 9999;
+}
+
+@media screen and (max-width: 710px) {
+    body #myBtn {
+        width: 40px;
+        height: 40px;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    body #myBtn img {
+        width: 26px;
+        height: 26px;
+    }
+}

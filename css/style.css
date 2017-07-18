@@ -112,6 +112,10 @@ a {
 
 /* Banner Section Styling */
 
+#banner {
+    background: #dadfe1;
+}
+
 #banner .img {
     max-width: 100%;
 }
