@@ -14,10 +14,3 @@ function topFunction() {
     document.body.scrollTop = 0; //
     document.documentElement.scrollTop = 0; //
 }
-
-/* End Scroll to top function */
-
-/* Carousel Gallery function */
-
-
-/* End Carousel Gallery function */
