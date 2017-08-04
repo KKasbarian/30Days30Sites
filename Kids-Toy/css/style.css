@@ -1,0 +1,790 @@
+/* Main */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+li {
+    list-style: none;
+    color: #fff;
+    font-size: 23px;
+    font-family: arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.9;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+hr {
+    width: 66%;
+    height: 3px;
+    border: none;
+    margin: 10px auto 30px auto;
+    background: #444;
+}
+
+/* Header and Nav Section Styling */
+
+header {
+    background: #181338;
+    background: url(../images/bg.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 400px;
+}
+
+.inner {
+    max-width: 1700px;
+    margin: 0 auto;
+    position: relative;
+}
+
+nav {
+    max-width: 100%;
+    width: 100%;
+    height: 80px;
+    padding: 20px; 
+    background: #62bffd;
+    position: fixed;
+    top: 0;
+    z-index: 999999999999;
+}
+
+nav .logo {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 30px;
+    font-family: arial, sans-serif;
+    float: left;
+    padding-top: 4px;
+}
+
+nav > ul {
+  	float: right;
+}
+
+nav > ul > li {
+    text-align: center;
+    line-height: 40px;
+    margin-left: 40px;
+}
+
+nav > ul li ul li {
+    width: 100%;
+    text-align: left;
+}
+
+nav ul li:hover {
+    cursor: pointer;
+    position: relative;
+}
+
+nav ul li:hover > ul {
+  	display: block;
+}
+
+nav ul li:hover > a {
+    background: #208ae6;
+}
+
+nav > ul > li > a {
+    cursor: pointer;
+    display: block;
+    outline: none;
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav > ul > li {
+  	float: left;
+}
+
+nav a {
+    color: white;
+}
+
+nav > ul li ul {
+    display: none;
+    position: absolute;
+    left: -30px;
+    top: 100%;
+    background: #008ae6;
+    z-index: 2000;
+    max-width: 400px;
+    width: 119px;
+}
+
+nav > ul li ul li > a {
+    margin: 0 auto;
+    padding: 0 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav > ul li ul li > a:hover {
+    background: #008af5;
+}
+
+[type="checkbox"], label {
+    display: none;
+}
+
+header h1 {
+    text-align: center;
+    width: 100%;
+    margin-top: 60px;
+    padding-bottom: 10px;
+    padding-top: 80px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 35px;
+    font-family: 'Exo', arial, sans-serif;
+}
+
+header h3 {
+    text-align: center;
+    margin: 14px;
+    color: #fffeee;
+    font-size: 24px;
+    font-family: 'Exo', arial, sans-serif;
+    font-weight: 400;
+}
+
+header button {
+    padding: 20px;
+    background: #008ae6;
+    color: #fffeee;
+    border: none;
+    border-radius: 3px;
+    font-size: 23px;
+    font-family: arial, sans-serif;
+}
+
+header button:hover {
+    background: #008af5;
+}
+
+/* About and Order Sections Styling */
+
+#about {
+    background: #eaeaea;
+    padding: 30px 0;
+}
+
+#about h1 {
+    font-size: 28px;
+    font-family: 'Exo', arial, sans-serif;
+    font-weight: 700;
+    padding: 2px 0 2px 0;
+}
+
+.flex-about {
+    display: flex;
+    flex-direction: column;
+}
+
+#about img {
+    max-width: 100%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#about .caption {
+    color: #444;
+    font-size: 15px;
+    font-family: arial, sans-serif;
+    padding-bottom: 20px;
+}
+
+#about h2 {
+    font-size: 27px;
+    font-family: helvetica, arial, sans-serif;
+    color: #000;
+}
+
+#about .order-txt {
+    font-size: 18px;
+    font-family: arial, sans-serif;
+    padding: 12px 0;
+}
+
+#about button {
+    padding: 21px;
+    background: #9fcef1;
+    color: #fffeee;
+    border: 3px solid #008ae6;
+    border-radius: 4px;
+    font-size: 23px;
+    font-family: arial, sans-serif;
+}
+
+#about button:hover {
+    background: #5f9ac7;
+}
+
+.about-spinner {
+    padding: 45px 0;
+    background: #008ae6;
+}
+
+.about-spinner p {
+    font-size: 17px;
+    font-family: 'Exo', arial, sans-serif;
+    padding: 5px;
+    line-height: 1.4;
+    color: #eee;
+}
+
+/* 1st Featured Image Styling */
+
+#feat-img1 {
+    background: url(../images/spinner.jpg) center no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 200px;
+}
+
+/* Reviews Section */
+
+#reviews {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+    background: #1c7ac2;
+}
+
+#reviews div p {
+    font-size: 17px;
+    font-family: arial, sans-serif;
+    font-weight: 400;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Shop Section Styling */
+
+#shop {
+    background: #eaeaea;
+    padding: 30px 0 50px 0;
+}
+
+#shop h1 {
+    font-size: 28px;
+    font-family: 'Exo', arial, sans-serif;
+    font-weight: 700;
+    padding: 2px 0 2px 0;
+}
+
+#shop p {
+    text-align: center;
+    font-size: 16px;
+    font-family: helvetica, arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+    padding-bottom: 20px;
+}
+
+#shop .flex-shop {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#shop .flex-shop img {
+    max-width: 100%;
+    width: 85%;
+    margin: 10px auto 14px auto;
+}
+
+#shop .flex-shop button {
+    margin: 0 auto 20px auto;
+    padding: 20px 30px;
+    color: #000;
+    background: #9fcef1;
+    border: 3px solid #008ae6;
+    border-radius: 1px;
+    font-size: 23px;
+    font-family: arial, sans-serif;
+}
+
+#shop .flex-shop button:hover {
+    background: #5f9ac7;
+}
+
+#shop .flex-shop h2 {
+    font-size: 21px;
+    font-family: 'Exo', arial, sans-serif;
+}
+
+/* 2nd Featured Image Styling */
+
+#feat-img2 {
+    background: url(../images/f-spinner.jpg) center no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 200px;
+}
+
+/* Contact and Support Section */
+
+#contact {
+    background: #008ae6;
+    padding: 40px 0;
+}
+
+#contact h1 {
+    font-size: 28px;
+    font-family: 'Exo', arial, sans-serif;
+    font-weight: 700;
+    padding: 2px 0 2px 0;
+    color: #fff;
+}
+
+#contact p {
+    text-align: center;
+    color: #eee;
+    font-size: 16px;
+    font-family: helvetica, arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+    padding-bottom: 20px;
+}
+
+#contact form input {
+    max-width: 90%;
+    width: 75%;
+    margin: 10px 0;
+    padding: 10px 0;
+    background: none;
+    color: #fff;
+    border: none;
+    border-bottom: 2px solid #333;
+}
+
+#contact form input:focus {
+    outline: none;
+}
+
+::-webkit-input-placeholder {
+    color: #eee;
+}
+::-moz-placeholder {
+    color: #eee;
+}
+:-ms-input-placeholder {
+    color: #eee;
+}
+:-moz-placeholder {
+    color: #eee;
+}
+
+#contact form textarea {
+    background: #1f92df;
+    border: none;
+    border: 2px solid #333;
+    width: 75%;
+    margin: 10px 0;
+    padding: 3px 6px;
+}
+
+#contact button {
+    padding: 20px;
+    background: #1fa9df;
+    color: #fffeee;
+    border: none;
+    border-radius: 3px;
+    font-size: 23px;
+    font-family: arial, sans-serif;
+}
+
+#contact button:hover {
+    background: #45a7f1;
+}
+
+/* Socials Section Styling */
+
+#socials {
+    background: #eaeaea;
+    padding: 30px 0 50px 0;
+}
+
+#socials h1 {
+    font-size: 28px;
+    font-family: 'Exo', arial, sans-serif;
+    font-weight: 700;
+    padding: 2px 0 2px 0;
+}
+
+#socials ul {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    list-style: none;
+    padding: 16px 0;
+}
+
+#socials ul li {
+    padding: 1px;
+    margin: 4px 10px;
+    font-size: 40px;
+}
+
+#socials ul li .fa {
+    background: #62bffd;
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-bottom-left-radius: 50%;
+  	border-bottom-right-radius: 50%;
+  	border-top-right-radius: 50%;
+  	border-top-left-radius: 50%;
+}
+
+/* Footer Section Styling */
+
+footer {
+    background: #62bffd;
+    opacity: 0.95;
+}
+
+footer h1 {
+    padding: 10px 0;
+    font-family: 'Exo', arial, sans-serif;
+    font-size: 34px;
+}
+
+footer .info-list ul {
+    margin: 15px;
+}
+
+footer .info-list ul li {
+    padding: 4px;
+    font-size: 21px;
+    font-family: arial, sans-serif;
+}
+
+footer .socials {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px;
+}
+
+footer .socials .fa {
+    padding: 10px;
+    font-size: 35px;
+    width: 45px;
+    color: white;
+    opacity: 0.9;
+}
+
+footer .fa-facebook:hover,
+footer .fa-github:hover,
+footer .fa-linkedin:hover {
+    opacity: 1;
+}
+
+footer p {
+    text-align: center;
+    font-size: 18px;
+    font-family: arial, sans-serif;
+    padding: 10px 0;
+}
+
+footer .fa-heart {
+    color: red;
+}
+
+footer .fa-code {
+    color: lightskyblue;
+}
+
+footer.copy {
+    background: #0084e9;
+    opacity: 0.96;
+}
+
+/* Scroll To Top Button Styling*/
+
+body #myBtn {
+	position: fixed;
+	display: block;
+	bottom: 20px;
+	right: 50px;
+	color: white;
+	width: 60px;
+	height: 60px;
+	background: #0274b3;
+    border: none;
+	border-bottom-left-radius: 50%;
+  	border-bottom-right-radius: 50%;
+  	border-top-right-radius: 50%;
+  	border-top-left-radius: 50%;
+    opacity: 0.85;
+  	z-index: 9999;
+}
+
+            /* Responsive Styling Section */
+
+/* General */
+
+@media screen and (min-width: 768px) {
+    hr {
+        width: 30%;
+    }
+}
+
+/* Header and Nav Section */
+
+@media screen and (max-width: 768px) {
+    nav {
+        height: 60px;
+        padding: 10px;
+  }
+    
+	nav ul {
+        display: none;
+	}
+
+	label {
+        display: block;
+        background: #5d9cec;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        border-radius: 4px;
+	}
+  
+    label:after{
+        content:'';
+        display: block;
+        width: 30px;
+        height: 5px;
+        background: #dadfe1;
+        margin: 7px 5px;
+        box-shadow: 0px 10px 0px #dadfe1, 0px 20px 0px #dadfe1;
+    }
+
+	[type="checkbox"]:checked ~ ul {
+        display: block;
+        z-index: 9999;
+        position: absolute;
+        right: 20px;
+        left: 20px;
+        top: 45px;
+	}
+
+	nav a {
+        color: #dadfe1;
+	}
+
+	nav ul li {
+        display: block;
+        float: none;
+        width: 100%;
+        text-align: center;
+        background: #206dcf;
+        text-indent: 20px;
+	}
+
+	nav > ul > li {
+  		margin-left: 0px;
+	}
+
+	nav > ul li ul li {
+        display: block;
+        float: none;
+	}
+  
+	nav > ul li ul {
+        display: block;
+        position: relative;
+        width: 100%;
+        z-index: 9999;
+        margin: 0 auto;
+        width: 100px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        height: 550px;
+    }
+    
+    header h1 {
+        padding-top: 130px;
+    }
+}
+
+/* About Section */
+
+@media screen and (min-width: 668px) {
+    #about .flex-about {
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    #about .flex-about img {
+        width: 65%;
+        margin: 0;
+    }
+    
+    #about .flex-about h2 {
+        margin-bottom: 24px;
+        font-size: 36px;
+    }
+    
+    #about .flex-about div:nth-of-type(2) p {
+        margin: 20px 0;
+        font-size: 21px;
+    }
+    
+    .about-spinner {
+        padding: 60px 0;
+    }
+
+    .about-spinner p {
+        font-size: 19px;
+        padding: 5px;
+        line-height: 1.4;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+}
+
+/* 1st Featured Image */
+
+@media screen and (min-width: 668px) {
+    #feat-img1 {
+        height: 80vh;
+        background-attachment: fixed;
+    }
+}
+
+/* Review Section */
+
+@media screen and (min-width: 680px) {
+    #reviews {
+        padding: 65px 0;
+    }
+    
+    #reviews div p {
+        font-size: 27px;
+        padding: 10px;
+        text-align: center;
+        color: #eee;
+    }
+}
+
+/* Shop Section */
+
+@media screen and (min-width: 768px) {
+    #shop .flex-shop {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+
+    #shop .flex-shop img {
+        width: 75%;
+    }
+
+    #shop .flex-shop button {
+        margin: 0 auto 20px auto;
+        padding: 20px 30px;
+        color: #000;
+        background: #9fcef1;
+        border: 3px solid #008ae6;
+        border-radius: 1px;
+        font-size: 23px;
+        font-family: arial, sans-serif;
+    }
+
+    #shop .flex-shop button:hover {
+        background: #5f9ac7;
+    }
+
+    #shop .flex-shop h2 {
+        font-size: 21px;
+        font-family: 'Exo', arial, sans-serif;
+    }
+}
+
+/* 2nd Featured Image */
+
+@media screen and (min-width: 668px) {
+    #feat-img2 {
+        height: 80vh;
+        background-attachment: fixed;
+    }
+}
+
+/* Contact Section */
+
+@media screen and (min-width: 768px) {
+    #contact form input, #contact form textarea {
+        width: 55%;
+    }
+}
+
+/* Footer Section */
+
+@media screen and (min-width: 768px) {
+    footer {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+        -webkit-align-content: stretch;
+        align-content: stretch;
+    }
+    
+    footer section {
+        width: 33%;
+    }
+    
+    footer .blue {
+        font-size: 52px;
+    }
+}
+
+/* Scroll To Top Button */
+
+@media screen and (max-width: 710px) {
+    body #myBtn {
+        width: 40px;
+        height: 40px;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    body #myBtn img {
+        width: 26px;
+        height: 26px;
+    }
+}
