@@ -1,4 +1,4 @@
-/* Scroll to top function */
+/* Scroll to top function */ 
 
 window.onscroll = function() {scrollFunction()};
 
