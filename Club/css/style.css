@@ -1,0 +1,445 @@
+/* Main */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background: #eee;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    font-family: 'Raleway', arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+/* Container Styling */
+
+#container {
+    max-width: 95%;
+    width: 90%;
+    margin: 20px auto;
+    background: #a3a3a3;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 4px #888;
+}
+
+@media screen and (max-width: 870px) {
+    #container {
+        max-width: 100%;
+        width: 100%;
+        margin: 0;
+        border: none;
+        border-radius: 0;
+    }
+}
+
+/* Navigation Section Styling */
+
+#navigation {
+    max-width: 100%;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+#navigation #logo {
+    margin-left: 70px;
+    padding: 5px 0;
+}
+
+#navigation #logo img {
+    width: 70px;
+    height: 70px;
+}
+
+#navigation #logo h2 {
+    font-family: 'Raleway', arial, sans-serif;
+    font-size: 25px;
+}
+
+#navigation #logo a {
+    color: #000;
+}
+
+#navigation #logo a:hover {
+    color: #444;
+}
+
+#navigation #menu-bar ul li {
+    display: inline;
+    padding: 30px 8px;
+}
+
+#navigation #menu-bar ul li a {
+    padding: 30px 15px;
+    font-family: 'Open Sans', arial, sans-serif;
+    font-size: 18px;
+    color: #000;
+}
+
+#navigation #menu-bar ul li a:hover {
+    border-bottom: 2px solid #000;
+    color: #666;
+}
+
+#nav label,
+#nav input,
+#nav ul {
+    display: none;
+}
+
+@media screen and (max-width: 870px) {
+    #navigation {
+        display: none;
+    }
+
+    #nav {
+        position: relative;
+    }
+
+    #nav ul {
+        display: none;
+        width: 100%;
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #nav ul li a {
+        display: block;
+        padding: .8em;
+        background: #fff;
+        color: #000;
+        font-size: 18px;
+        font-family: 'Open Sans', arial, sans-serif;
+        text-decoration: none;
+        border-right: 1px solid #34495e;
+        font-size: .9em;
+        opacity: 0.96;
+    }
+
+    #nav ul li a:hover {
+        background: #e9e9e9;
+        opacity: 1;
+    }
+
+    #nav ul li:first-of-type a:hover {
+        background: #e8e8e8;
+        opacity: 1;
+    }
+
+    #nav ul li:last-of-type a {
+        border-right: 0px;
+    }
+
+    #nav ul li ul li a {
+        padding-left: 1.5em;
+    }
+
+    #nav ul li ul li ul li a {
+        padding-left: 3.125em;
+    }
+
+    #nav input.trigger {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    #nav input.trigger:checked ~ ul, #nav input.trigger:checked ~ ul li ul {
+        display: block !important;
+    }
+
+    #nav label {
+        position: relative;
+        display: block;
+        min-height: 2em;
+        padding: .45em;
+        font-size: .9em;
+        margin: 0;
+        cursor: pointer;
+        background: #fff;
+        color: #000;
+        line-height: 2em;
+        color: white;
+        text-align: left!important;
+    }
+
+    #nav label:after {
+        position: absolute;
+        right: .2em;
+        top: .1em;
+        content: "\2261";
+        font-size: 2.5em;
+        font-weight: 300;
+        color: #000;
+    }
+
+    #nav .title {
+        font-size: 24px;
+        font-family: 'Raleway', arial, sans-serif;
+        color: #000;
+    }
+}
+
+/* Header Section Styling */
+
+#header {
+    padding: 40px 0;
+}
+
+#header img {
+    max-width: 100%;
+    width: 150px;
+    height: 150px;
+    border: 6px solid #fff;
+    border-radius: 50%;
+}
+
+#header blockquote {
+    font-size: 30px;
+    font-family: helvetica, arial, sans-serif;
+    margin: 14px 0;
+}
+
+#header p {
+    font-size: 20px;
+    font-family: 'Open Sans', arial, sans-serif;
+    padding-top: 20px;
+}
+
+@media screen and (min-width: 870px) {
+    #header {
+        padding: 60px 0;
+    }
+    
+    #header img {
+        display: none;
+    }
+    
+    #header blockquote {
+        font-size: 50px;
+    }
+    
+    #header p {
+        font-size: 30px;
+        padding: 140px;
+    }
+}
+
+/* About Section Styling */
+
+#about {
+    background: #9c9c9c;
+    padding: 30px 0;
+}
+
+#about h1 {
+    font-size: 46px;
+}
+
+#about p {
+    text-align: justify;
+    font-size: 19px;
+    font-family: 'Open Sans', arial, helvetica, sans-serif;
+    margin: 17px 0;
+    padding: 0 7px;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    color: #222;
+}
+
+@media screen and (min-width: 870px) {
+    #about p {
+        text-align: center;
+        padding: 0 12px;
+    }
+}
+
+/* Tools Section Styling */
+
+#tools {
+    background: #c0c0c0;
+    padding: 40px 0;
+}
+
+#tools h1 {
+    font-size: 46px;
+    margin-bottom: 40px;
+}
+
+#tools img {
+    max-width: 100%;
+}
+
+#tools .caption {
+    text-align: center;
+    font-size: 15px;
+    font-family: arial, sans-serif;
+    padding-bottom: 17px;
+}
+
+#tools p {
+    text-align: justify;
+    font-size: 19px;
+    font-family: 'Open Sans', arial, helvetica, sans-serif;
+    margin: 17px 0;
+    padding: 0 7px;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    color: #222;
+}
+
+#tools p.equipment {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+@media screen and (min-width: 870px) {
+    #tools p {
+        text-align: center;
+        padding: 0 12px;
+    }
+}
+
+/* Membership Section Styling */
+
+#membership {
+    padding: 40px 0;
+    background: #9c9c9c;
+}
+
+#membership h1 {
+    font-size: 44px;
+    margin-bottom: 2px;
+}
+
+#membership h3 {
+    font-size: 23px;
+    font-family: 'Raleway', arial, sans-serif;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+
+#membership .flex-member div {
+    background: #d0e1e2;
+    max-width: 85%;
+    width: 85%;
+    margin: 20px auto;
+    padding: 22px 5px;
+    box-shadow: 5px 5px 4px #333;
+}
+
+#membership .flex-member i {
+    font-size: 40px;
+    padding-bottom: 15px;
+    color: #9c9c9c;
+}
+
+#membership .flex-member h3 {
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+#membership .flex-member .price {
+    font-size: 19px;
+    font-family: arial, sans-serif;
+    margin-bottom: 13px;
+}
+
+#membership .flex-member .deals {
+    font-size: 17px;
+    font-family: 'Open Sans';
+}
+
+#membership .info {
+    font-size: 15px;
+    font-family: helvetica, arial, sans-serif;
+    margin: 13px 0;
+}
+
+@media screen and (min-width: 670px) {
+    #membership .flex-member {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    #membership .flex-member div {
+        margin: 10px 20px;
+    }
+}
+
+/* Contact Section Styling */
+
+#contact {
+    background: #eee;
+    padding: 20px 0;
+}
+
+#contact p {
+    font-size: 18px;
+    font-family: 'Open Sans', arial, helvetica, sans-serif;
+    margin: 20px 0;
+}
+
+#contact .info-link a {
+    color: #444;
+}
+
+#contact .info-link a:hover {
+    text-decoration: underline;
+}
+
+#contact .copy {
+    font-size: 16px;
+    font-family: arial, sans-serif;
+    margin: 40px 0 4px 0;
+}
+
+/* Footer Section Styling */
+
+footer {
+    background: #e8e8e8;
+    padding: 20px 0;
+    color: #000;
+}
+
+footer p {
+    font-size: 19px;
+    font-family: 'Raleway', arial, sans-serif;
+}
+
+footer a {
+    font-size: 19.5px;
+    color: #222;
+}
+
+footer .fa-heart {
+    color: red;
+}
+
+footer .fa-code {
+    color: deepskyblue;
+}
