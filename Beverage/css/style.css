@@ -1,0 +1,539 @@
+/* Main */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background: #eee;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    font-family: '', arial, sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+/* Banner Section Styling */
+
+#banner {
+    background: #d1d1d1;
+    text-align: right;
+    padding: 2px 0;
+}
+
+#banner ul {
+    list-style: none;
+    margin-right: 60px;
+}
+
+#banner ul li {
+    display: inline;
+    padding: 0 30px;
+}
+
+#banner ul li a {
+    color: #888;
+    font-size: 13px;
+    font-family: arial, helvetica, sans-serif;
+}
+
+#banner ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Navigation Section Styling */
+
+#navigation {
+    max-width: 100%;
+    background: #fff;
+    padding: 10px 0;
+}
+
+#navigation #menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#navigation #menu ul li {
+    display: inline;
+    padding: 0 18px;
+}
+
+#navigation #menu ul li a {
+    padding: 28px 15px;
+    font-family: 'Open Sans', arial, sans-serif;
+    font-size: 18px;
+    color: #000;
+}
+
+#navigation #menu ul li a:hover {
+    border-bottom: 2px solid #31df4d;
+    color: #666;
+}
+
+#navigation #menu img {
+    width: 90px;
+    height: 90px;
+    margin: 0 30px;
+}
+
+#navigation #menu .no-border:hover {
+    border: none;
+}
+
+#nav label,
+#nav input,
+#nav ul {
+    display: none;
+}
+
+@media screen and (max-width: 870px) {
+    #banner {
+        text-align: center;
+    }
+    
+    #navigation {
+        display: none;
+    }
+
+    #nav {
+        position: relative;
+    }
+
+    #nav ul {
+        display: none;
+        width: 100%;
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #nav ul li a {
+        display: block;
+        padding: .8em;
+        background: #fff;
+        color: #000;
+        font-size: 18px;
+        font-family: 'Open Sans', arial, sans-serif;
+        text-decoration: none;
+        border-right: 1px solid #34495e;
+        font-size: .9em;
+        opacity: 0.96;
+    }
+
+    #nav ul li a:hover {
+        background: #e9e9e9;
+        opacity: 1;
+    }
+
+    #nav ul li:first-of-type a:hover {
+        background: #e8e8e8;
+        opacity: 1;
+    }
+
+    #nav ul li:last-of-type a {
+        border-right: 0px;
+    }
+
+    #nav ul li ul li a {
+        padding-left: 1.5em;
+    }
+
+    #nav ul li ul li ul li a {
+        padding-left: 3.125em;
+    }
+
+    #nav input.trigger {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    #nav input.trigger:checked ~ ul, #nav input.trigger:checked ~ ul li ul {
+        display: block !important;
+    }
+
+    #nav label {
+        position: relative;
+        display: block;
+        min-height: 2em;
+        padding: .45em;
+        font-size: .9em;
+        margin: 0;
+        cursor: pointer;
+        background: #fff;
+        color: #000;
+        color: white;
+        text-align: left!important;
+    }
+
+    #nav label:after {
+        position: absolute;
+        right: .2em;
+        top: .1em;
+        content: "\2261";
+        font-size: 2.5em;
+        font-weight: 300;
+        color: #000;
+    }
+    
+    #nav label img {
+        width: 40px;
+        height: 40px;
+        margin-left: 40px;
+    }
+}
+
+/* Header Section Styling */
+
+#header {
+    background: url(../images/beers.jpg) center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 200px;
+}
+
+#header h1 {
+    font-size: 70px;
+    font-family: 'Open Sans', arial, sans-serif;
+    font-weight: 700;
+}
+
+#header h3 {
+    font-size: 30px;
+    font-family: 'Roboto', arial, sans-serif;
+}
+
+@media screen and (max-width: 870px) {
+    #header {
+        padding: 150px 0;
+        background-attachment: scroll;
+    }
+    
+    #header h1 {
+        font-size: 50px;
+    }
+    
+    #header h3 {
+        font-size: 26px;
+    }
+}
+
+
+/* About Section Styling */
+
+#about {
+    padding: 40px 0;
+}
+
+#about h1 {
+    font-size: 54px;
+    font-family: 'Roboto', arial, sans-serif;
+    font-weight: 400;
+}
+
+#about p {
+    text-align: justify;
+    font-size: 23px;
+    font-family: 'Open Sans', arial, sans-serif;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    margin: 22px auto;
+}
+
+#about .flex-about .caption {
+    text-align: center;
+    font-size: 16px;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 0;
+    letter-spacing: 0;
+    margin: 20px 0;
+}
+
+#about h3 {
+    font-size: 30px;
+    font-family: 'Roboto', arial, sans-serif;
+    margin: 20px 0 10px 0;
+}
+
+#about ul {
+    list-style: none;
+}
+
+#about ul li {
+    text-align: justify;
+    padding: 5px 0;
+    font-family: arial, helvetica, sans-serif;
+}
+
+@media screen and (min-width: 960px) {
+    #about .flex-about {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 32px 0;
+    }
+    
+    #about .flex-about p {
+        margin: 10px 16px;
+    }
+    
+    #about .flex-about .info {
+        width: 80%;
+    }
+    
+    #about .flex-about .info-img {
+        width: 90%;
+    }
+    
+    #about .flex-about .caption {
+        margin: 20px 0;
+    }
+    
+    #about h3 {
+        text-align: left;
+        margin-left: 20px;
+    }
+}
+
+/* Beverages Section Styling */
+
+#bev {
+    background: #d9d9d9;
+    padding: 30px 0 34px 0;
+}
+
+#bev h1 {
+    font-size: 54px;
+    font-family: 'Roboto', arial, sans-serif;
+    font-weight: 400;
+    margin: 13px 0;
+}
+
+#bev .types {
+    font-size: 19px;
+    font-family: arial, sans-serif;
+    font-weight: 400;
+    margin: 5px 0 25px 0;
+}
+
+#bev .flex-bev div {
+    background: #f2f2f2;
+    width: 85%;
+    margin: 30px auto;
+    padding-bottom: 15px;
+    border-radius: 7px;
+}
+
+#bev .flex-bev img {
+    width: 100%;
+}
+
+#bev .flex-bev h3 {
+    font-size: 25px;
+    font-family: 'Roboto', arial, sans-serif;
+    padding: 14px 0;
+}
+
+#bev .flex-bev .bev-info {
+    font-size: 15px;
+    font-family: 'Open Sans', arial, sans-serif;
+    padding-bottom: 10px;
+}
+
+#bev .flex-bev .price {
+    text-align: right;
+    font-size: 14px;
+    font-family: arial, sans-serif;
+    margin-right: 25px;
+    color: #333;
+}
+
+@media screen and (min-width: 860px) {
+    #bev .flex-bev {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    
+    #bev .flex-bev div {
+        width: 30%;
+        margin-bottom: 0;
+    }
+}
+
+/* Contact Section Styling */
+
+#contact {
+    background: url(../images/cup.jpg) no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    padding: 40px 0;
+}
+
+#contact h1 {
+    font-size: 54px;
+    font-family: 'Roboto', arial, sans-serif;
+    font-weight: 400;
+    margin: 13px 0;
+    color: #e2e2e2;
+}
+
+#contact .inquiries {
+    font-size: 19px;
+    font-family: arial, sans-serif;
+    font-weight: 400;
+    margin: 5px 0 25px 0;
+    color: #d9d9d9
+}
+
+#contact input {
+    padding: 14px 10px;
+    margin: 17px 0;
+    width: 90%;
+    border: none;
+    outline: none;
+}
+
+#contact select {
+    padding: 14px 10px;
+    margin: 17px 0;
+    width: 90%;
+    border: none;
+}
+
+#contact textarea {
+    padding: 14px 10px;
+    margin: 17px 0;
+    width: 90%;
+    border: none;
+}
+
+#contact input:active, #contact select:active, #contact textarea:active {
+    border: none;
+    outline: none;
+}
+
+#contact button {
+    padding: 10px 40px;
+    background: #31df4d;
+    font-size: 21px;
+    font-family: 'Open Sans', arial, sans-serif;
+    border: none;
+    border-radius: 5px;
+    opacity: 0.8;
+    -webkit-transition: ease-in 0.1s;
+       -moz-transition: ease-in 0.1s;
+        -ms-transition: ease-in 0.1s;
+         -o-transition: ease-in 0.1s;
+            transition: ease-in 0.1s;
+}
+
+#contact button:hover {
+    opacity: 1;
+}
+
+#contact button a {
+    color: #f3f3f3;
+}
+
+@media screen and (min-width: 970px) {
+    #contact .form {
+        width: 50%;
+        margin-left: auto;
+    }
+}
+
+footer {
+    padding: 20px 0;
+    background: #eee;
+}
+
+footer img {
+    width: 90px;
+    height: 90px;
+}
+
+footer p {
+    font-size: 19px;
+    font-family: 'Roboto', arial, sans-serif;
+    margin: 12px 0;
+}
+
+footer.copy {
+    padding: 10px 0;
+    background: #fff;
+}
+
+footer.copy .fa-heart {
+    color: tomato;
+}
+
+footer.copy .fa-code {
+    color: deepskyblue;
+}
+
+footer.copy a {
+    color: #333;
+}
+
+/* Go to Top Button Styling */
+
+#myBtn {
+	position: fixed;
+	display: block;
+	bottom: 20px;
+	right: 50px;
+	width: 60px;
+	height: 60px;
+	background: #41a6b9;
+    border: none;
+	border-bottom-left-radius: 50%;
+  	border-bottom-right-radius: 50%;
+  	border-top-right-radius: 50%;
+  	border-top-left-radius: 50%;
+    opacity: 0.85;
+  	z-index: 9999;
+    cursor: pointer;
+}
+
+#myBtn a {
+    color: white;
+    font-size: 22px;
+    padding: 6px;
+}
+
+#myBtn:hover {
+    opacity: 1;
+}
+
+@media screen and (max-width: 710px) {
+    #myBtn {
+        width: 40px;
+        height: 40px;
+        bottom: 10px;
+        right: 10px;
+    }
+}
