@@ -2,4 +2,4 @@
 
 I wanted to implement a Clean and Modern Design for this Site.
 
-Navigation and a Map for the building will be planned Soon!
+Planning to add a Navigation and a Map for the building Soon!
