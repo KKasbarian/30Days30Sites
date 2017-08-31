@@ -1,4 +1,4 @@
-## Day 2: Tourist Attraction
+## Day 3: Tourist Attraction
 
 I wanted to implement a Clean and Modern Design for this Site.
 
