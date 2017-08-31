@@ -2,7 +2,7 @@
 
 I made a Flexbox Responsive Navigation Bar, used Flexbox Here and There.
 
-Thought about Names of Members, Roles of Each, Text also.
+Thought about Names of Members, Roles of Each, Text also, to not just Write some Dummy Texts!
 
 An Annoying Ad Placeholder added.
 
