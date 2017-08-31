@@ -1,4 +1,4 @@
-## Day 2: Event Page.
+## Day 2: Event Page
 
 Not much done here, since it was one of my first projects.
 
