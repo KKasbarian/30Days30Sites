@@ -1,2 +1,3 @@
-# restaurant-menu
-Restaurant Menu page: 5th day Project of 30Days30Sites Project
+## Day 6: Restaurant Menu
+
+Implemented Jquery Tabs for Menu Items. It was Hard at first to Implement but also Fun.
