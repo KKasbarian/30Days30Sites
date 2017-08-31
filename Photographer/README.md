@@ -8,7 +8,7 @@ I did a lot of Interesting Things Here:
 - Parallax Effect used for Good.
 - Flexbox as Always is Used a Lot.
 - Gallery Section's Design is taken from W3Schools.
-- I can't Beleive I made a Map and a Contact Form is Aligned beside Each Other!!
+- I can't Beleive I made a Map and a Contact Form Aligned beside Each Other!!
 - I Implemented a Map.
 - Interesting Footer.
 
