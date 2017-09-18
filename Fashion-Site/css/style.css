@@ -1,0 +1,724 @@
+/* Main */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #111;
+    opacity: 0.96;
+}
+
+a:hover {
+    color: #000;
+    opacity: 1;
+}
+
+h1 {
+    text-align: center;
+    font-size: 56px;
+}
+
+img {
+    max-width: 100%;
+    opacity: 0.95;
+}
+
+img:hover {
+    opacity: 1;
+}
+
+video {
+    max-width: 100%;
+    opacity: 0.75;
+}
+
+.bold {
+    font-size: 39px;
+    color: #f10095;
+}
+
+#navigation .no-border:hover {
+    border-bottom: 0;
+    color: #f10095;
+}
+
+.jeans-blue {background: #000cb1;}
+.open-gray {background: #e0e0e0;}
+.orange {background: #ff7b00;}
+.yellow {background: #fffb00;}
+.red {background: #ff0000;}
+.gray {background: #ccc;}
+.blue {background: #0051ff;}
+.pink {background: #ff00b3;}
+.dark-gray {background: #777;}
+.blacky {background: #222;}
+.green {background: #08d408;}
+.gray-blue {background: #6262bb;}
+.gold-orange {background: #ffc400;}
+.black {background: #000;}
+
+
+/* Navigation Section Styling */
+
+@media screen and (max-width: 940px) {
+    #navigation {
+        display: none;
+    }
+
+    #nav {
+        position: relative;
+    }
+
+    #nav ul {
+        display: none;
+        width: 100%;
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #nav ul li a {
+        text-align: center;
+        display: block;
+        padding: .8em;
+        background: #fff;
+        color: #f10095;
+        font-size: 18px;
+        font-family: 'Ubuntu', arial, sans-serif;
+        text-decoration: none;
+        border-right: 1px solid #34495e;
+        font-size: .9em;
+        opacity: 0.96;
+    }
+
+    #nav ul li a:hover {
+        background: #e9e9e9;
+        opacity: 1;
+    }
+
+    #nav input.trigger {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    #nav input.trigger:checked ~ ul, #nav input.trigger:checked ~ ul li ul {
+        display: block !important;
+    }
+
+    #nav label {
+        position: relative;
+        display: block;
+        min-height: 2em;
+        padding: .45em;
+        font-size: .9em;
+        font-family: 'Open Sans', arial, sans-serif;
+        margin: 0;
+        cursor: pointer;
+        background: #fff;
+        color: #000;
+        text-align: right!important;
+    }
+
+    #nav label:after {
+        position: absolute;
+        right: .7em;
+        top: 0;
+        content: "\2261";
+        font-size: 2.5em;
+        font-weight: 300;
+        color: #000;
+    }
+
+    #nav label h1 {
+        text-align: left;
+        margin-left: 30px;
+        font-size: 23px;
+        font-family: 'Parisienne', arial, sans-serif;
+    }
+
+    #nav label .bold {
+        font-size: 24px;
+    }
+
+    #nav label a {
+        color: #000;
+        opacity: 0.8;
+    }
+}
+
+@media screen and (min-width: 941px) {
+    #nav {
+        display: none;
+    }
+
+    #navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background: #fff;
+        box-shadow: 0 2px 2px rgba(0,0,0,0.5);
+        padding: 10px 0;
+    }
+
+    #navigation ul li {
+        display: inline;
+        padding: 3px 0;
+    }
+
+    #navigation ul li a {
+        padding: 17px 12px;
+        font-size: 15px;
+        font-family: 'Lato', arial, sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    #navigation ul li a:hover {
+        border-bottom: 1.5px solid #f10095;
+    }
+
+    #navigation h1 {
+        font-size: 37px;
+        font-family: 'Parisienne', arial, sans-serif;
+        font-weight: 700;
+    }
+
+    #navigation ul .fa-user-circle, #navigation ul .fa-shopping-bag {
+        padding-left: 5px;
+        color: #f10095;
+    }
+}
+
+/* Banner Section Styling */
+
+#banner {
+    padding-bottom: 50px;
+}
+
+#banner h1 {
+    font-size: 63px;
+    font-family: 'Parisienne', arial, sans-serif;
+}
+
+#banner .bold {
+    font-size: 58px;
+}
+
+#banner p {
+    font-size: 26px;
+    font-family: 'Lato', arial, sans-serif;
+}
+
+@media screen and (max-width: 919px) {
+    #banner h1 {
+        font-size: 35px;
+    }
+    
+    #banner p {
+        text-align: center;
+        font-size: 19px;
+        font-weight: 400;
+        margin: 10px 0;
+        padding: 0 5px;
+    }
+}
+
+@media screen and (min-width: 920px) {
+    #banner video {
+        position: relative;
+    }
+
+    #banner h1 {
+        position: absolute;
+        bottom: 170px;
+        left: 40px;
+    }
+
+    #banner p {
+        position: absolute;
+        bottom: 130px;
+        left: 40px;
+    }
+}
+
+/* M/W New Section Styling */
+
+#new {
+    padding: 40px 0;
+}
+
+#new h1 {
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Lato', arial, sans-serif;
+    font-weight: 400;
+    margin: 13px 0;
+}
+
+#new h1::first-letter {
+    font-size: 36px;
+    color: #f10095;
+    text-decoration: underline;
+}
+
+#new .flex-men, #new .flex-women {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+}
+
+#new .flex-men > div , #new .flex-women >div {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#new .flex-colors-m, #new .flex-colors-w {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 7px 0;
+}
+
+#new .flex-colors-m div, #new .flex-colors-w div {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin: 0 10px;
+    z-index: 999;
+}
+
+
+#new .flex-colors-m div:hover, #new .flex-colors-w div:hover {
+    padding: 4px;
+    border: 2px solid #333;
+    cursor: pointer;
+}
+
+#new img {
+    -webkit-transition: ease-in .5s;
+       -moz-transition: ease-in .5s;
+        -ms-transition: ease-in .5s;
+         -o-transition: ease-in .5s;
+            transition: ease-in .5s;
+}
+
+#new img:hover {
+    -webkit-transform: scale(1.04) rotate(1deg);
+       -moz-transform: scale(1.04) rotate(1deg);
+        -ms-transform: scale(1.04) rotate(1deg);
+         -o-transform: scale(1.04) rotate(1deg);
+            transform: scale(1.04) rotate(1deg);
+}
+
+#new h4 {
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Open Sans', arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0 17px 0;
+}
+
+#new p {
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Ubuntu', arial, sans-serif;
+    font-weight: 400;
+    margin-bottom: 26px;
+}
+
+@media screen and (min-width:780px) {
+    #new {
+        padding: 60px 0;
+    }
+
+    #new .flex-men, #new .flex-women {
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: flex-end;
+    }
+
+    #new .flex-men > div, #new .flex-women > div {
+        margin: 16px 0;
+        flex: 0 0 23%;
+    }
+}
+
+/* Trending Section Styling */
+
+#trending {
+    padding: 40px 0;
+}
+
+#trending h1 {
+        text-align: center;
+        font-size: 32px;
+        font-family: 'Lato', arial, sans-serif;
+        font-weight: 400;
+        margin-bottom: 20px;
+}
+
+#trending h1::first-letter {
+    font-size: 36px;
+    color: #f10095;
+    text-decoration: underline;
+}
+
+#trending .flex-trending {
+    text-align: center;
+}
+
+#trending .flex-trending h2 {
+    font-size: 25px;
+    font-family: 'Lato', arial, sans-serif;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+#trending .flex-trending p {
+    font-size: 16px;
+    font-family: 'Open Sans', arial, sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+#trending .flex-trending button {
+    padding: 14px 27px;
+    margin-bottom: 20px;
+    font-size: 19px;
+    font-family: arial, helvetica, sans-serif;
+    background: transparent;
+    border: 2px solid #f10095;
+    border-radius: 34px;
+    opacity: 0.92;
+    -webkit-transition: ease-in .5s;
+       -moz-transition: ease-in .5s;
+        -ms-transition: ease-in .5s;
+         -o-transition: ease-in .5s;
+            transition: ease-in .5s;
+}
+
+#trending .flex-trending button a {
+    color: #f10095;
+}
+
+#trending .flex-trending button:hover {
+    background: #f10095;
+    opacity: 1;
+}
+
+#trending .flex-trending button:hover a {
+    color: #fff;
+}
+
+@media screen and (min-width: 780px) {
+    #trending {
+        padding: 60px 0;
+    }
+
+    #trending .flex-trending {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #trending .flex-trending div {
+        flex: 0 0 32%;
+    }
+}
+
+/* Gift Cards Section Styling */
+
+#misc {
+    padding: 40px 0;
+}
+
+#misc h1 {
+    font-size: 34px;
+    font-family: 'Lato', arial, sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+#misc .flex-gift div {
+    width: 90%;
+    margin: 27px auto;
+    background: #f2f2f2;
+    border: 2px solid #f10095;
+    border-radius: 5px;
+    box-shadow: 4px 5px 8px rgba(0,0,0,0.5);
+    -webkit-transition: ease-in .7s;
+       -moz-transition: ease-in .7s;
+        -ms-transition: ease-in .7s;
+         -o-transition: ease-in .7s;
+            transition: ease-in .7s;
+}
+
+#misc .flex-gift div:hover {
+    -webkit-transform: scale(1.03);
+       -moz-transform: scale(1.03);
+        -ms-transform: scale(1.03);
+         -o-transform: scale(1.03);
+            transform: scale(1.03);
+}
+
+#misc .flex-gift h1 {
+    font-size: 63px;
+    font-family: 'Open Sans', arial, sans-serif;
+    font-weight: 400;
+    color: #f10095;
+    padding: 38px 0 50px 0;
+}
+
+#misc .flex-gift h3 {
+    text-align: center;
+    font-size: 26px;
+    font-family: 'Lato', arial, sans-serif;
+    font-weight: 400;
+    padding: 17px 0;
+    background: #f10095;
+    color: #eee;
+}
+
+#misc .flex-gift button {
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 0;
+    background: #f9f9f9;
+    border: none;
+}
+
+#misc .flex-gift button a:hover {
+    color: #f10095;
+}
+
+@media screen and (min-width: 780px) {
+    #misc {
+        padding: 60px 0;
+    }
+
+    #misc .flex-gift {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #misc .flex-gift div {
+        flex: 0 0 23%;
+    }
+}
+
+/* Location/Newsletter Section Styling */
+
+#loc-news {
+    padding: 70px 0;
+    background: #eee;
+}
+
+#loc-news .flex-loc-news {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#loc-news .flex-loc-news div:first-child {
+    margin-bottom: 30px;
+}
+
+#loc-news .flex-loc-news h2 {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Open Sans', arial, sans-serif;
+    margin-bottom: 20px;
+    color: #f10095;
+}
+
+#loc-news .flex-loc-news p {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Lato', arial, sans-serif;
+    font-weight: 400;
+    margin-bottom: 17px;
+}
+
+#loc-news .flex-loc-news input {
+    font-size: 14px;
+    width: 65%;
+    padding: 10px 7px;
+    border: 2px solid #f10095;
+    outline: none;
+}
+
+#loc-news .flex-loc-news button {
+    font-size: 16px;
+    padding: 10px;
+    background: #f10095;
+    border: none;
+    opacity: 0.95;
+}
+
+#loc-news .flex-loc-news button a {
+    color: #fff;
+}
+
+#loc-news .flex-loc-news button:hover {
+    opacity: 1;
+}
+
+@media screen and (min-width: 780px) {
+    #loc-news .flex-loc-news {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+
+    #loc-news .flex-loc-news div {
+        flex: 0 0 47%;
+        padding: 20px 0;
+    }
+    
+    #loc-news .flex-loc-news div:first-child {
+        margin-bottom: 0;
+        padding-right: 10px;
+        border-right: 1.5px solid #aaa;
+    }
+    
+    #loc-news .flex-loc-news h2 {
+        font-size: 40px;
+    }
+    
+    #loc-news .flex-loc-news p {
+        margin-bottom: 20px;
+    }
+    
+    #loc-news .flex-loc-news input {
+        width: 75%;
+    }
+    
+    #loc-news .flex-loc-news button {
+        font-size: 18px;
+    }
+}
+
+/* Orders Section Styling */
+
+#orders {
+    padding: 40px 0;
+}
+
+#orders h1 {
+    text-align: center;
+    font-size: 34px;
+    font-family: 'Lato', arial, sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+#orders ul {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#orders ul li {
+    display: inline;
+    padding: 0 4px;
+    font-size: 13px;
+    font-family: 'Ubuntu', arial, sans-serif;
+    font-weight: 400;
+}
+
+#orders p {
+    text-align: center;
+    font-size: 39px;
+    font-family: 'Open Sans', arial, sans-serif;
+    font-weight: 800;
+    margin: 40px 0;
+    color: #aaa;
+}
+
+
+@media screen and (min-width: 760px) {
+    #orders {
+        padding: 60px 0;
+    }
+
+    #orders ul li {
+        padding: 0 40px;
+        font-size: 16px;
+    }
+
+    #orders p {
+        margin: 100px 0;
+    }
+}
+
+/* Footer Section Styling */
+
+footer {
+    text-align: center;
+    background: #ccc;
+    padding-top: 25px;
+    padding-bottom: 17px;
+}
+
+footer h4 {
+    font-size: 17px;
+    font-family: 'Ubuntu', arial, sans-serif;
+    margin-bottom: 10px;
+}
+
+footer ul {
+    margin-bottom: 18px;
+}
+
+footer ul li {
+    font-size: 15px;
+    font-family: 'Lato', arial, sans-serif;
+    padding: 7px 0;
+}
+
+footer .socials li {
+    display: inline;
+    padding: 0 9px;
+    font-size: 24px;
+}
+
+footer .socials li:hover {
+    color: #f10095;
+}
+
+footer p {
+    font-size: 18px;
+    font-family: arial, sans-serif;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+@media screen and (min-width: 670px) {
+    footer {
+        padding-top: 33px;
+    }
+
+    footer .flex-footer-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+}
