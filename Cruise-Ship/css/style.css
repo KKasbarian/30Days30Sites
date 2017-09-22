@@ -1,0 +1,563 @@
+/* Main */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e0e0e0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #111;
+    opacity: 0.9;
+}
+
+a:hover {
+    color: #000;
+    opacity: 1;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+p, div, button {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    opacity: 0.95;
+}
+
+img:hover {
+    opacity: 1;
+}
+
+hr {
+    padding: 0;
+    margin: 0;
+    height: 1px;
+    border: none;
+    background: #119704;
+}
+
+/* Navigation Section Styling */
+
+@media screen and (max-width: 980px) {
+    #navigation, #navigation-2 {
+        display: none;
+    }
+
+    #nav {
+        z-index: 1;
+        position: relative;
+    }
+
+    #nav ul {
+        display: none;
+        width: 100%;
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #nav ul li a {
+        text-align: center;
+        display: block;
+        padding: .8em;
+        background: #fff;
+        color: #000;
+        font-size: 18px;
+        font-family: 'Ubuntu', arial, sans-serif;
+        text-decoration: none;
+        border-right: 1px solid #34495e;
+        font-size: .9em;
+        opacity: 0.96;
+    }
+
+    #nav ul li a:hover {
+        background: #e9e9e9;
+        color: #119704;
+        opacity: 1;
+    }
+
+    #nav input.trigger {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    #nav input.trigger:checked ~ ul, #nav input.trigger:checked ~ ul li ul {
+        display: block !important;
+    }
+
+    #nav label {
+        position: relative;
+        display: block;
+        min-height: 2em;
+        padding: .45em;
+        font-size: .9em;
+        font-family: 'Open Sans', arial, sans-serif;
+        margin: 0;
+        cursor: pointer;
+        background: #fff;
+        color: #000;
+        text-align: right!important;
+    }
+
+    #nav label:after {
+        position: absolute;
+        right: .7em;
+        top: -7px;
+        content: "\2261";
+        font-size: 2.5em;
+        font-weight: 300;
+        color: #000;
+    }
+
+    #nav label img {
+        width: 35%;
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (min-width: 981px) {
+    #nav {
+        display: none;
+    }
+
+    #navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background: #119704;
+    }
+
+    #navigation img {
+        width: 40%;
+    }
+
+    #navigation ul li {
+        display: inline-block;
+        padding: 0 7px;
+    }
+
+    #navigation ul li a {
+        color: #fff;
+        padding: 33px 2px;
+        opacity: 0.9;
+    }
+
+    #navigation ul li a:hover {
+        background: #19D105;
+        opacity: 1;
+    }
+
+    #navigation ul > li ul {
+        display: none;
+        position: absolute;
+        background: #119704;
+    }
+
+    #navigation ul > li ul li {
+        padding: 6px 10px;
+    }
+
+    #navigation ul > li ul li a {
+        width: 100%;
+        padding: 8px 20px;
+    }
+
+    #navigation ul > li:hover ul {
+        display: flex;
+        flex-direction: column;
+        z-index: 99;
+    }
+
+    #navigation-2 {
+        text-align: center;
+        background: #18CC03; 
+        padding: 10px 0;
+    }
+
+    #navigation-2 ul li {
+        display: inline;
+        font-size: 17px;
+        font-family: 'Exo', arial, sans-serif;
+        padding: 0 20px;
+    }
+
+    #navigation-2 ul li a {
+        color: #222;
+    }
+
+    #navigation-2 ul li a:hover {
+        color: #119704;
+    }
+}
+
+/* About Section Styling */
+
+#about {
+    padding-bottom: 15px;
+}
+
+#about h1 {
+    font-size: 29px;
+    font-family: 'Open Sans', arial, sans-serif;
+    margin: 0 0 15px 0;
+}
+
+#about p {
+    text-align: justify;
+    font-size: 17px;
+    font-family: 'Exo', arial, sans-serif;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+
+#about .about-1-img {
+    background: url(../images/venice.jpg) center no-repeat;
+    background-size: cover; 
+    width: 100%;
+    height: 300px;
+}
+
+#about .about-2-img {
+    background: url(../images/ship-hotel.jpg) center no-repeat;
+    background-size: cover; 
+    width: 100%;
+    height: 300px;
+}
+
+@media screen and (min-width: 830px) {
+    #about {
+        padding: 30px 0;
+    }
+
+    #about .flex-about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #about p {
+        width: 75%;
+        margin: 0 auto;
+    }
+}
+
+/* Mid-Banner Section Styling */
+
+#mid-banner {
+    background: url(../images/jump.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 300px;
+}
+
+@media screen and (min-width: 830px) {
+    #mid-banner {
+        height: 100vh;
+    }
+}
+
+/* Excursions Section Styling */
+
+#excursions {
+    padding: 20px 0;
+}
+
+#excursions h1 {
+    font-size: 29px;
+    font-family: 'Open Sans', arial, sans-serif;
+    margin: 0 0 15px 0;
+}
+
+#excursions h3 {
+    text-align: center;
+    font-size: 21px;
+    font-family: 'Exo', arial, sans-serif;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+#excursions .flex-excursions {
+    padding-left: 6px;
+}
+
+#excursions img {
+    width: 85%;
+}
+
+#excursions hr {
+    width: 20%;
+    height: 2px;
+    border: none;
+    background: #119704;
+    margin-top: 10px;
+}
+
+#excursions h2 {
+    font-size: 19px;
+    font-family: 'Open Sans', arial, sans-serif;
+    font-weight: 400;
+    margin: 5px 0 3px 0;
+    padding: 0;
+}
+
+#excursions p {
+    font-size: 15px;
+    font-family: 'Exo', arial, sans-serif;
+    margin-bottom: 4px;
+}
+
+#excursions .tags {
+    font-size: 14px;
+    font-family: 'Poppins', arial, sans-serif;
+    font-weight: 400;
+    color: #119704;
+    margin-bottom: 12px;
+}
+
+#excursions button {
+    padding: 6px 12px;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+    background: #119704;
+}
+
+#excursions button a {
+    color: #eee;
+}
+
+#excursions button a:hover {
+    color: #fff;
+}
+
+@media screen and (min-width: 810px) {
+    #excursions .flex-excursions {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding-left: 0;
+    }
+
+    #excursions .flex-excursions div {
+        flex: 0 0 32%;
+    }
+
+    #excursions img {
+        padding-left: 10px;
+    }
+
+    #excursions h2,
+    #excursions p {
+        text-align: justify;
+        padding-left: 10px;
+    }
+
+    #excursions hr,
+    #excursions button {
+        margin-left: 10px;
+    }
+}
+
+/* Ad Section Styling */
+
+#ad {
+    padding: 40px 0;
+    background: #eee;
+}
+
+#ad h1 {
+    font-size: 37px;
+    font-family: 'Open Sans', arial, sans-serif;
+    margin-bottom: 14px;
+}
+
+#ad p {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Poppins', arial, sans-serif;
+    margin-bottom: 16px;
+}
+
+#ad h2 {
+    text-align: center;
+    font-family: 'Open Sans', arial, sans-serif;
+    margin-bottom: 22px;
+}
+
+#ad .credit {
+    text-align: center;
+    width: 100%;
+}
+
+@media screen and (min-width: 670px) {
+    #ad .credit {
+        text-align: center;
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+/* Contact Section Styling */
+
+#contact {
+    padding: 20px 0;
+}
+
+#contact h1 {
+    font-size: 20px;
+    font-family: 'Open Sans', arial, sans-serif;
+    font-weight: 400;
+    display: inline;
+}
+
+@media screen and (min-width: 730px) {
+    #contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+/* Footer Section Styling */
+
+footer {
+    text-align: center;
+    padding-top: 20px;
+    background: #aaa;
+}
+
+footer h1 {
+    font-size: 30px;
+    font-family: 'Open Sans', arial, sans-serif;
+}
+
+footer ul li {
+    font-size: 15px;
+    font-family: 'Exo', arial, sans-serif;
+    padding: 3px 0;
+}
+
+footer .flex-foot-1 h2 {
+    font-size: 15px;
+    font-family: 'Exo', arial, sans-serif;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+footer input {
+    padding: 10px;
+    margin-bottom: 14px;
+    width: 90%;
+    border: 1px solid #555;
+    outline: none;
+}
+
+footer input:focus {
+    border: 2px solid #333;
+}
+
+footer button {
+    font-size: 16px;
+    font-family: 'Poppins', arial, sans-serif;
+    padding: 4px 26px;
+    margin-bottom: 18px;
+    background: #119704;
+    border: none;
+    outline: none;
+}
+
+footer button a {
+    color: #eee;
+}
+
+footer button a:hover {
+    color: #fff;
+}
+
+footer .flex-foot-2 p {
+    font-size: 17px;
+    font-family: arial, sans-serif;
+    padding-bottom: 16px;
+}
+
+footer .flex-foot-2 ul li {
+    display: inline;
+    padding: 12px 14px;
+    font-size: 26px;
+}
+
+footer ul li a:hover {
+    color: #119704;
+}
+
+footer > p {
+    font-size: 16px;
+    font-family: arial, sans-serif;
+    color: #eee;
+    background: #333;
+    padding: 10px 0;
+}
+
+footer > p .fa-code {
+    color: #18CC03;
+}
+
+footer > p a {
+    color: #ddd;
+}
+
+footer > p a:hover {
+    color: #eee;
+    opacity: 0.98;
+}
+
+@media screen and (min-width: 820px) {
+    footer .flex-foot-1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    footer .flex-foot-1 div {
+        flex: 0 0 23%;
+    }
+
+    footer .flex-foot-1 h2 {
+        margin-bottom: 10px;
+    }
+
+    footer .flex-foot-1 input {
+        width: 80%;
+        padding: 6px;
+    }
+
+    footer .flex-foot-2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
