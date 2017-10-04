@@ -1,0 +1,778 @@
+/* Main */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #111;
+}
+
+a:hover {
+    color: #000;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    opacity: 0.98;
+}
+
+img:hover {
+    opacity: 1;
+}
+
+hr {
+    width: 25%;
+    height: 2px;
+    margin: 10px auto 20px auto;
+    border: none;
+    background: #aaa;
+}
+
+/* Navigation (Small, Medium and Large) Section Styling */
+
+@media screen and (max-width: 980px) {
+    #navigation {
+        display: none;
+    }
+
+    #nav {
+        z-index: 1;
+        position: relative;
+    }
+
+    #nav ul {
+        display: none;
+        width: 100%;
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #nav ul li a {
+        text-align: center;
+        display: block;
+        padding: .8em;
+        background: #fff;
+        color: #000;
+        font-size: 18px;
+        font-family: 'Ubuntu', arial, sans-serif;
+        text-decoration: none;
+        font-size: .9em;
+        opacity: 0.96;
+    }
+
+    #nav ul li a:hover {
+        background: #e9e9e9;
+        color: #4b4b4b;
+        opacity: 1;
+    }
+
+    #nav input.trigger {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    #nav input.trigger:checked ~ ul, #nav input.trigger:checked ~ ul li ul {
+        display: block !important;
+    }
+
+    #nav label {
+        position: relative;
+        display: block;
+        min-height: 2em;
+        padding: .45em;
+        font-size: .9em;
+        font-family: 'Open Sans', arial, sans-serif;
+        margin: 0;
+        cursor: pointer;
+        background: #fff;
+        color: #000;
+        text-align: right!important;
+    }
+
+    #nav label:after {
+        position: absolute;
+        right: .7em;
+        top: -3px;
+        content: "\2261";
+        font-size: 2.5em;
+        font-weight: 300;
+        color: #000;
+    }
+
+    #nav label h1 {
+        text-align: left;
+        padding-left: 10px;
+    }
+}
+
+@media screen and (min-width: 981px) {
+    #nav {
+        display: none;
+    }
+
+    #navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 0;
+        background: #fff;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    #navigation div:first-child {
+        margin-left: 110px;
+    }
+
+    #navigation div:last-child {
+        margin-right: 70px;
+    }
+
+    #navigation h1 {
+        font-size: 31px;
+        font-family: 'Ubuntu', arial, sans-serif;
+        font-weight: 300;
+    }
+
+    #navigation h1 a {
+        color: #000;
+        opacity: 0.97;
+    }
+
+    #navigation h1 a:hover {
+        opacity: 1;
+    }
+
+    #navigation ul li {
+        display: inline;
+        padding: 3px 2px;
+        font-size: 18px;
+        font-family: 'Playfair Display', arial, sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    #navigation ul li a {
+        padding: 10px 15px;
+        color: #000;
+    }
+
+    #navigation ul li a:hover {
+        color: #4B4B4B;
+        opacity: 0.9;
+    }
+
+}
+
+/* Banner and Top Article Section Styling */
+
+#banner {
+    padding-bottom: 40px;
+}
+
+#banner h2 {
+    font-size: 20px;
+    font-family: 'Open Sans', arial, sans-serif;
+    font-weight: 400;
+    color: #DADADA;
+    padding-left: 10px;
+    margin: 18px 0 13px 0;
+}
+
+#banner h1 {
+    text-align: justify;
+    font-size: 30px;
+    font-family: 'Playfair Display', arial, sans-serif;
+    font-weight: 400;
+    color: #4b4b4b;
+    padding-left: 10px;
+}
+
+#banner hr {
+    width: 20%;
+    height: 2px;
+    margin: 5px 0 17px 0;
+    border: none;
+    background: #4b4b4b;
+    margin-left: 10px;
+}
+
+#banner p {
+    text-align: justify;
+    font-size: 16px;
+    font-family: 'PT Serif', arial, sans-serif;
+    font-weight: 400;
+    padding: 0 7px;
+    margin-bottom: 20px;
+    color: #242424;
+    line-height: 1.4;
+}
+
+#banner p a {
+    color: #0969A1;
+}
+
+#banner input {
+    font-size: 18px;
+    font-family: 'Ubuntu', arial, sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+}
+
+@media screen and (min-width: 780px) {
+    #banner .width {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    #banner h2 {
+        padding-top: 50px;
+    }
+
+    #banner hr {
+        width: 10%;
+    }
+}
+
+/* 1st Latest Posts Section Styling */
+
+#latest-1, #latest-2 {
+    padding: 40px 0;
+}
+
+#latest-1 h1, #latest-2 h1 {
+    font-size: 38px;
+    font-family: 'Open Sans', arial, sans-serif;
+    font-weight: 300;
+}
+
+#latest-1 hr, #latest-2 hr {
+    width: 10%;
+    height: 2px;
+    margin: 10px auto 25px auto;
+    border: none;
+    background: #4b4b4b;
+}
+
+#latest-1 #flex-latest-1, #latest-2 #flex-latest-2, #latest-2 #flex-latest-3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 75%;
+    margin: 0 auto;
+}
+
+#latest-1 #flex-latest-1 div, #latest-2 #flex-latest-2 div, #latest-2 #flex-latest-3 div {
+    flex: 0 0 45%;
+    margin: 15px 0 25px 0;
+}
+
+#latest-1 #flex-latest-1 img, #latest-2 #flex-latest-2 img, #latest-2 #flex-latest-2 img {
+    -webkit-filter: grayscale(50%);
+    filter: grayscale(50%);
+}
+
+
+#latest-1 h2, #latest-2 h2 {
+    font-size: 19px;
+    font-family: 'Open Sans', arial, sans-serif;
+    font-weight: 400;
+    color: #DADADA;
+    margin: 15px 0 10px 0;
+}
+
+#latest-1 #flex-latest-1 h1, #latest-2 #flex-latest-2 h1, #latest-2 #flex-latest-3 h1 {
+    text-align: justify;
+    font-size: 27px;
+    font-family: 'Playfair Display', arial, sans-serif;
+    font-weight: 400;
+    color: #4b4b4b;
+}
+
+#latest-1 #flex-latest-1 hr, #latest-2 #flex-latest-2 hr {
+    width: 15%;
+    height: 2px;
+    margin: 10px 0 25px 0;
+    border: none;
+    background: #4b4b4b;
+}
+
+#latest-1 p, #latest-2 p {
+    text-align: justify;
+    font-size: 16px;
+    font-family: 'PT Serif', arial, sans-serif;
+    font-weight: 400;
+    color: #242424;
+    line-height: 1.4;
+}
+
+#latest-2 .center-button {
+    display: flex;
+    justify-content: center;
+}
+
+#latest-2 button {
+    padding: 16px 20px;
+    margin: 40px 0 30px 0;
+    font-size: 23px;
+    font-family: 'Ubuntu', arial, sans-serif;
+    font-weight: 300;
+    background: none;
+    border: 2px solid #4b4b4b;
+}
+
+#latest-2 button a {
+    color: #000;
+}
+
+#latest-2 button a:hover {
+    color: #4b4b4b;
+}
+
+@media screen and (max-width: 780px) {
+    #latest-1 hr, #latest-2 hr {
+        width: 25%;
+    }
+
+    #latest-1 #flex-latest-1, #latest-2 #flex-latest-2 {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    #latest-2 #flex-latest-3 {
+        flex-direction: column;
+        width: 90%;
+    }
+}
+
+/* Newsletter Section Styling */
+
+#newsletter {
+    padding: 40px 0;
+    background: #e9e9e9;
+    margin-bottom: 40px;
+}
+
+#newsletter h1 {
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Playfair Display', arial, sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+#newsletter .flex-submit {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#newsletter input {
+    width: 70%;
+    padding: 10px 10px 10px 6px;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 16px;
+    font-family: 'PT Serif', arial, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    border-bottom: 1px solid #000;
+}
+
+#newsletter a {
+    padding: 10px;
+    border-bottom: 1px solid #000;
+}
+
+@media screen and (min-width: 720px) {
+    #newsletter {
+        padding: 80px 0 70px 0;
+    }
+
+    #newsletter h1 {
+        font-size: 31px;
+        margin-bottom: 60px;
+    }
+
+    #newsletter input {
+        width: 30%;
+    }
+}
+
+/* Footer Section */
+
+footer {
+    text-align: center;
+    background: #e9e9e9;
+    padding: 20px 0;
+}
+
+footer ul {
+    margin: 20px 0;
+}
+
+footer .privacy li {
+    display: inline;
+    font-size: 15px;
+    font-family: 'Open Sans', arial, sans-serif;
+    font-weight: 300;
+}
+
+footer .privacy a {
+    color: #4b4b4b;
+    padding: 0 10px;
+}
+
+footer .socials li {
+    display: inline;
+    font-size: 16px;
+    font-family: 'PT Serif', arial, sans-serif;
+    color: #4b4b4b;
+}
+
+footer .socials a {
+    font-size: 18px;
+    padding: 0 4px;
+    color: #4b4b4b;
+}
+
+footer .socials a:hover {
+    color: #000;
+}
+
+@media screen and (min-width: 620px) {
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+/**** Article Page Styling ****/
+
+/* Banner and Main article section */
+
+#banner-2 {
+    padding-bottom: 40px;
+    width: 100%;
+}
+
+#banner-2 h2 {
+    font-size: 20px;
+    font-family: 'Open Sans', arial, sans-serif;
+    font-weight: 400;
+    color: #DADADA;
+    padding-left: 10px;
+    margin: 18px 0 13px 0;
+}
+
+#banner-2 h1 {
+    text-align: justify;
+    font-size: 30px;
+    font-family: 'Playfair Display', arial, sans-serif;
+    font-weight: 400;
+    color: #4b4b4b;
+    padding-left: 10px;
+}
+
+#banner-2 hr {
+    width: 20%;
+    height: 2px;
+    margin: 5px 0 17px 0;
+    border: none;
+    background: #4b4b4b;
+    margin-left: 10px;
+}
+
+#banner-2 p {
+    text-align: justify;
+    font-size: 16px;
+    font-family: 'Playfair Display', arial, sans-serif;
+    font-weight: 400;
+    padding: 0 7px;
+    margin: 30px 0;
+    color: #242424;
+    line-height: 1.4;
+}
+
+#banner-2 .width .quote {
+    width: 80%;
+    font-size: 17px;
+    font-family: 'Open Sans', arial, sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    margin: 25px auto 40px auto;
+}
+
+#banner-2 .width ul {
+    text-align: right;
+    margin: 60px 0 40px 0;
+}
+
+#banner-2 .width ul li {
+    display: inline;
+    font-size: 18px;
+    font-family: 'Ubuntu', arial, sans-serif;
+    font-weight: 400;
+    padding: 0 2px;
+    color: #aaa;
+}
+
+#banner-2 .width ul a {
+    padding: 0 3px;
+    color: #aaa;
+}
+
+#banner-2 .width ul a:hover {
+    color: #4b4b4b;
+}
+
+@media screen and (min-width: 780px) {
+    #banner-2 {
+        widows: 85%;
+    }
+
+    #banner-2 .width {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    #banner-2 h2 {
+        padding-top: 30px;
+    }
+
+    #banner-2 hr {
+        width: 10%;
+    }
+
+    #banner-2 .width img {
+        margin: 10px 0;
+    }
+
+    #banner-2 .width p {
+        margin: 20px 0;
+        opacity: 0.9;
+    }
+
+    #banner-2 .width ul {
+        text-align: right;
+        margin: 70px 0 40px 0;
+    }
+
+    #banner-2 .width ul li {
+        display: inline;
+        font-size: 18px;
+        font-family: 'Ubuntu', arial, sans-serif;
+        font-weight: 400;
+        padding: 0 4px;
+        color: #aaa;
+    }
+
+    #banner-2 .width ul a {
+        padding: 0 3px;
+        color: #aaa;
+    }
+
+    #banner-2 .width ul a:hover {
+        color: #4b4b4b;
+    }
+}
+
+/* Related Section */
+
+#related {
+    padding: 50px 0;
+    background: #f1f1f1;
+}
+
+#related .width {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#related h2 {
+    font-size: 16px;
+    font-family: 'Open Sans', arial, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+    color: #aaa;
+}
+
+#related .flex-related {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#related .flex-related div {
+    flex: 0 0 31%;
+}
+
+#related .flex-related h1 {
+    text-align: left;
+    font-size: 20px;
+    font-family: 'PT Serif', arial, sans-serif;
+    font-weight: 400;
+    color: #4b4b4b;
+    margin: 18px 0 13px 0;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 710px) {
+    #related .flex-related {
+        flex-direction: column;
+    }
+
+    #related .flex-related div {
+        margin: 20px 0;
+    }
+
+    #related .flex-related h1 {
+        margin: 6px 0 13px 0;
+    }
+}
+
+/* Comments Section */
+
+#comments {
+    padding: 60px 0;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#comments h2 {
+    font-size: 16px;
+    font-family: 'Open Sans', arial, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+    color: #aaa;
+}
+
+#comments .flex-comments {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 45px 0;
+}
+
+
+#comments .flex-comments img {
+    width: 180px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+#comments .flex-comments h2 {
+    color: #242424;
+    padding-left: 40px;
+}
+
+#comments .flex-comments p {
+    font-size: 16px;
+    font-family: 'Playfair Display', arial, sans-serif;
+    font-weight: 400;
+    padding-left: 40px;
+    margin-bottom: 17px;
+}
+
+#comments .flex-comments a {
+    font-size: 17px;
+    font-family: 'PT Serif', arial, sans-serif;
+    color: #aaa;
+    padding-left: 40px;
+}
+
+#comments .flex-comment {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#comments input {
+    margin-right: 50px;
+    width: 80%;
+    padding: 20px 15px;
+    font-size: 17px;
+    font-family: 'Open Sans', arial, sans-serif;
+    color: #aaa;
+    text-transform: uppercase;
+    outline: none;
+    border: 1px solid #aaa;
+}
+
+#comments ul {
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+
+#comments ul li {
+    display: inline;
+    font-size: 16px;
+    font-family: 'Ubuntu', arial, sans-serif;
+    padding: 4px;
+    color: #aaa;
+}
+
+#comments ul a {
+    color: #aaa;
+}
+
+#comments ul a:hover {
+    color: #4b4b4b;
+}
+
+@media screen and (max-width: 940px) {
+    #comments .flex-comments {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    #comments .flex-comments img {
+        width: 110px;
+        height: 100px;
+    }
+
+    #comments .flex-comments h2,
+    #comments .flex-comments p,
+    #comments .flex-comments a {
+        padding-left: 0;
+    }
+
+    #comments input,
+    #comments ul {
+        margin-right: 0;
+    }
+
+    #comments input {
+        width: 100%;
+    }
+}
