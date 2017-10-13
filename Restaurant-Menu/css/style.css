@@ -178,7 +178,7 @@ hr {
 }
 
 #menus section h1 {
-    font-size: 43px;
+    font-size: 33px;
     font-family: 'Marck Script', cursive, arial, sans-serif;
     color: #fff;
     opacity: 0.9;
@@ -203,6 +203,22 @@ hr {
 
 #menus section .right {
     text-align: right;
+}
+
+#menus .flex-menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+#menus .flex-menu div {
+    flex: 0 0 30%;
+}
+
+#menus .drinks div {
+    flex: 0 0 47%;
 }
 
 /* Footer Section Styling */
@@ -304,7 +320,6 @@ footer.copy {
     #about img {
         margin: 0 auto;
         width: 100%;
-        max-height: 500px;
     }
     
     #about p {
