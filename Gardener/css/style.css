@@ -1,0 +1,678 @@
+/* Main */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, #35942e, #fff, #41b63b) no-repeat;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    opacity: 0.9;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Container Styling */
+
+#container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 920px) {
+    #container {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+/* Navigation */
+
+@media screen and (max-width: 980px) {
+    #navigation {
+        display: none;
+    }
+
+    #nav {
+        z-index: 1;
+        position: relative;
+        opacity: 0.8;
+    }
+
+    #nav ul {
+        display: none;
+        width: 100%;
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #nav ul li a {
+        text-align: center;
+        display: block;
+        padding: .8em;
+        background: #609c2e;
+        color: #fff;
+        font-size: 18px;
+        font-family: 'Open Sans', arial, sans-serif;
+        text-decoration: none;
+        font-size: .9em;
+        opacity: 0.96;
+    }
+
+    #nav ul li a:hover {
+        background: #e9e9e9;
+        color: #609c2e;
+        opacity: 1;
+    }
+
+    #nav input.trigger {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    #nav input.trigger:checked ~ ul, #nav input.trigger:checked ~ ul li ul {
+        display: block !important;
+    }
+
+    #nav label {
+        position: relative;
+        display: block;
+        min-height: 2em;
+        padding: .45em;
+        font-size: .9em;
+        font-family: 'Open Sans', arial, sans-serif;
+        margin: 0;
+        cursor: pointer;
+        background: #fff;
+        color: #000;
+        text-align: right!important;
+    }
+
+    #nav label:after {
+        position: absolute;
+        right: .7em;
+        top: -3px;
+        content: "\2261";
+        font-size: 2.5em;
+        font-weight: 300;
+        color: #000;
+    }
+
+    #nav label h1 {
+        text-align: left;
+        padding-left: 10px;
+        font-family: 'Assistant', arial, sans-serif;
+    }
+
+    #nav label h1 a:hover {
+        color: #41b63b;
+    }
+}
+
+@media screen and (min-width: 981px) {
+    #nav {
+        display: none;
+    }
+
+    #navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 7px 0;
+        background: #fff;
+        opacity: 0.8;
+    }
+
+    #navigation div:first-child {
+        margin-left: 90px;
+    }
+
+    #navigation div:last-child {
+        margin-right: 70px;
+    }
+
+    #navigation h1 {
+        font-size: 31px;
+        font-family: 'Open Sans', arial, sans-serif;
+        font-weight: 700;
+    }
+
+    #navigation h1 a {
+        color: #377703;
+        opacity: 0.97;
+    }
+
+    #navigation h1 a:hover {
+        color: #609c2e;
+        opacity: 1;
+    }
+
+    #navigation ul li {
+        display: inline;
+        padding: 3px 2px;
+        font-size: 17px;
+        font-family: 'Assistant', arial, sans-serif;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    #navigation ul li a {
+        padding: 10px 15px;
+        color: #111f0c;
+    }
+
+    #navigation ul li a:hover {
+        color: #377703;
+    }
+}
+
+/* Banner Section Styling */
+
+#banner {
+    background: #111f0c url(../images/heart-grass.jpg) no-repeat center;
+    background-size: cover;
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 8px solid #fff;
+}
+
+#banner h1 {
+    font-size: 62px;
+    font-family: 'Open Sans', arial, sans-serif;
+    font-weight: 700;
+    padding: 17px;
+    margin-bottom: 23px;
+    color: #49a300;
+}
+
+#banner h2 {
+    font-size: 27px;
+    font-family: 'Assistant', arial, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 27px;
+    color: #222;
+}
+
+#banner a {
+    padding: 23px 35px;
+    background: #1c4b0b;
+    border-radius: 10px;
+    font-size: 22px;
+    font-family: 'PT Sans', arial, sans-serif;
+    color: #fff;
+    opacity: 0.9;
+}
+
+#banner a:hover {
+    opacity: 1;
+}
+
+@media screen and (max-width: 640px) {
+    #banner h1 {
+        font-size: 45px;
+    }
+
+    #banner h2 {
+        text-align: center;
+    }
+}
+
+/* Quote Section Styling */
+
+#quote {
+    background: #111f0c url(../images/treeroad-1.jpg) no-repeat center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#quote div {
+    text-align: left;
+    width: 40%;
+    padding: 20px 10px 20px 70px;
+    background: #222;
+    opacity: 0.7;
+}
+
+#quote h1 {
+    font-size: 27px;
+    font-family: 'PT Sans', arial, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 6px;
+    color: #fff;
+}
+
+#quote h2 {
+    text-align: right;
+    font-size: 23px;
+    font-family: 'Open Sans', arial, sans-serif;
+    font-weight: 300;
+    padding-right: 20px;
+    color: #bbbbbb;
+}
+
+@media screen and (max-width: 820px) {
+    #quote {
+        align-items: center;
+    }
+
+    #quote div {
+        text-align: left;
+        width: 80%;
+        padding: 10px;
+        background: #222;
+        opacity: 0.7;
+    }
+}
+
+/* About Section Styling */
+
+#about {
+    text-align: center;
+    background: #1c4b0b url(../images/bg.png) center;
+    padding: 40px 0 60px 0;
+}
+
+#about h1 {
+    font-size: 46px;
+    font-family: 'Open Sans', arial, sans-serif;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: #eee;
+}
+
+#about p {
+    max-width: 80%;
+    width: 70%;
+    margin: 0 auto;
+    font-size: 18px;
+    font-family: 'Assistant', arial, sans-serif;
+    font-weight: 400;
+    margin-bottom: 12px;
+    color: #b9b9b9;
+}
+
+#about p.services-int {
+    margin-bottom: 60px;
+}
+
+#about a {
+    padding: 23px 35px;
+    background: #eee;
+    border-radius: 10px;
+    font-size: 22px;
+    font-family: 'PT Sans', arial, sans-serif;
+    color: #1c4b0b;
+    opacity: 0.9;
+}
+
+#about a:hover {
+    opacity: 1;
+}
+
+/* Services Section Styling */
+
+#services {
+    padding: 40px 0;
+    background: #63ac5f;
+}
+
+#services h1 {
+    text-align: center;
+    font-size: 46px;
+    font-family: 'Open Sans', arial, sans-serif;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: #eee;
+}
+
+#services .flex-services {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+#services .flex-services div {
+    flex: 0 0 30%;
+}
+
+#services .flex-services h2 {
+    font-size: 23px;
+    font-family: 'PT Sans', arial, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    margin: 6px 0 15px 0;
+}
+
+#services .flex-services p {
+    font-size: 17px;
+    font-family: 'Assistant', arial, sans-serif;
+    font-weight: 300;
+    margin-bottom: 17px;
+    line-height: 1.5;
+}
+
+#services .flex-services a {
+    color: #111f0c;
+}
+
+#services .flex-services a:hover {
+    color: #377703;
+}
+
+@media screen and (max-width: 840px) {
+    #services .flex-services {
+        flex-direction: column;
+    }
+
+    #services .flex-services div {
+        margin: 20px;
+        width: 87%:
+    }
+}
+
+/* Work Section Styling */
+
+#work {
+    padding: 40px 0;
+    background: #2c7e0e;
+}
+
+#work h1 {
+    text-align: center;
+    font-size: 46px;
+    font-family: 'Open Sans', arial, sans-serif;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: #eee;
+}
+
+#work .flex-works {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#work .flex-works div {
+    flex: 0 0 47%;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#work .flex-works div > div {
+    padding: 20px 40px;
+    background: #222;
+    opacity: 0.8;
+}
+
+#work .flex-works div > div h1 {
+    font-size: 28px;
+}
+
+#work .work-1 {
+    background: url(../images/garden-1.jpg) center no-repeat;
+    height: 400px;
+    background-size: cover;
+}
+
+#work .work-2 {
+    background: url(../images/garden-2.jpg) center no-repeat;
+    height: 400px;
+    background-size: cover;
+}
+
+#work .work-3 {
+    background: url(../images/pumpkins.jpg) center no-repeat;
+    height: 400px;
+    background-size: cover;
+}
+
+#work .work-4 {
+    background: url(../images/treepark.jpg) center no-repeat;
+    height: 400px;
+    background-size: cover;
+}
+
+#work .work-5 {
+    background: url(../images/treeroad-2.jpg) center no-repeat;
+    height: 400px;
+    background-size: cover;
+}
+
+@media screen and (max-width: 840px) {
+    #work .flex-works {
+        flex-direction: column;
+    }
+}
+
+/* Participate Section Styling */
+
+#participate {
+    text-align: center;
+    padding: 40px 0;
+    background: #50a50b;
+}
+
+#participate h1 {
+    font-size: 46px;
+    font-family: 'Open Sans', arial, sans-serif;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: #eee;
+}
+
+#participate h2 {
+    font-size: 23px;
+    font-family: 'Assistant', arial, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    width: 80%;
+    margin: 0 auto 40px auto;
+    color: #c2c2c2;
+}
+
+#participate label {
+    padding-right: 20px;
+    font-size: 19px;
+    font-family: 'PT Sans', arial, sans-serif;
+    color: #dbdbdb;
+}
+
+#participate input {
+    padding: 14px 16px;
+    width: 50%;
+    margin: 20px 0;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+
+#participate select {
+    padding: 14px 16px;
+    width: 50%;
+    margin: 20px 0 40px 0;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+
+#participate a {
+    padding: 23px 35px;
+    background: #1c4b0b;
+    border-radius: 10px;
+    font-size: 22px;
+    font-family: 'PT Sans', arial, sans-serif;
+    font-style: italic;
+    color: #fff;
+    opacity: 0.8;
+}
+
+#participate a:hover {
+    opacity: 1;
+}
+
+@media screen and (max-width: 640px) {
+    #participate h2 {
+        text-align: justify;
+        padding: 0 17px;
+        font-size: 21px;
+        width: 100%;
+        margin: 0 auto 40px auto;
+    }
+
+    #participate label {
+        padding-right: 7px;
+        font-size: 17px;
+    }
+
+    #participate input {
+        width: 70%;
+    }
+    
+    #participate select {
+        width: 70%;
+        margin-bottom: 60px;
+    }
+}
+
+/* Footer Section Styling */
+
+footer.footer {
+    padding: 40px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: #eee;
+    opacity: 0.8;
+    border-top: 8px solid #1c4b0b;
+}
+
+footer.footer h1 {
+        font-size: 31px;
+        font-family: 'Open Sans', arial, sans-serif;
+        font-weight: 700;
+}
+
+footer.footer h1 a {
+        color: #377703;
+        opacity: 0.97;
+}
+
+footer.footer h1 a:hover {
+        color: #609c2e;
+        opacity: 1;
+}
+
+footer.footer .num {
+    font-size: 20px;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #49a300;
+    opacity: 0.9;
+}
+
+footer.footer .num:hover {
+    opacity: 1;
+}
+
+footer.footer .address {
+    font-size: 18px;
+    font-family: 'Open Sans', arial, sans-serif;
+    font-weight: 300;
+    margin-top: 3px;
+}
+
+footer.footer .social h1 {
+    font-size: 24px;
+    font-family: 'PT Sans', arial, sans-serif;
+    margin-bottom: 8px;
+}
+
+footer.footer ul li {
+    display: inline;
+    font-size: 24px;
+    margin: 4px 9px;
+}
+
+footer.footer li:first-child {
+    margin-left: 0;
+}
+
+footer.footer li a {
+    color: #111f0c;
+    opacity: 0.9;
+}
+
+footer.footer li a:hover {
+    color: #2c7e0e;
+    opacity: 1;
+}
+
+footer.copy {
+    text-align: center;
+    padding: 20px 0 15px 0;
+    background: #286910;
+}
+
+footer.copy .privacy {
+    margin-bottom: 12px;
+}
+
+footer.copy .privacy a {
+    text-decoration: underline;
+    color: #111;
+    opacity: 1;
+}
+
+footer.copy .privacy a:hover {
+    color: #000;
+}
+
+footer.copy .copyright {
+    font-size: 16px;
+    font-family: 'Assistant', arial, sans-serif;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 600px) {
+    footer.footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer.footer div {
+        margin: 17px 0;
+    }
+}
