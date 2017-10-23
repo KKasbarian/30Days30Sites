@@ -148,7 +148,7 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     border: none;
     background: #c5c5c5;
 }
@@ -207,7 +207,7 @@ hr {
 
 #menus .flex-menu {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;
@@ -332,12 +332,12 @@ footer.copy {
 /* Menu Section Responsive Styling */
 
 @media screen and (min-width: 810px) {
-    #menus ul {
-	flex-direction: row;
-    }
-	
     #menus {
         width: 70%;
+    }
+	
+   #menus .flex-menu {
+	 flex-direction: row;
     }
 	
 }
