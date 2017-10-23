@@ -148,7 +148,7 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     border: none;
     background: #c5c5c5;
 }
@@ -332,9 +332,14 @@ footer.copy {
 /* Menu Section Responsive Styling */
 
 @media screen and (min-width: 810px) {
+    #menus ul {
+	flex-direction: row;
+    }
+	
     #menus {
         width: 70%;
     }
+	
 }
 
 /* Footer Section Responsive Styling */
