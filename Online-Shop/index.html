@@ -51,9 +51,9 @@
         <div>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Discounts</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="#trending">Shop</a></li>
+                <li><a href="#news">Discounts</a></li>
+                <li><a href="#features">About</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
@@ -77,15 +77,16 @@
 
     <section id="title">
         <div>
+            <span class="hamburger" onclick="openNav()"><i class="fa fa-bars"></i></span>
+        </div>
+        <div>
             <h1><a href="index.html">Sea Goodies</a></h1>
         </div>
         
         <div>
             <a href="#"><i class="fa fa-shopping-cart"></i></a>
         </div>
-        <div>
-            <span class="hamburger" onclick="openNav()"><i class="fa fa-bars"></i></span>
-        </div>
+        
     </section>
 
     <section id="search">
@@ -100,14 +101,14 @@
             <div class="overlay-content">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">Discounts</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#trending">Shop</a></li>
+                    <li><a href="#news">Discounts</a></li>
+                    <li><a href="#features">About</a></li>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Contact</a></li><hr>
                     <h2>
                         <a href="#">Sign In</a>
-                        <a href="">Sign Up</a>
+                        <a href="#">Sign Up</a>
                     </h2>
                     <select name="currency">
                         <option value="dollar">USD</option>
@@ -134,12 +135,12 @@
         <div>
             <h1>Shop our list of amazing smelling salts.</h1>
             <h2>Only the best brands</h2>
-            <a href="#">Shop Now</a>
+            <a href="#trending">Shop Now</a>
         </div>
         <div>
             <h1>The best and original quality diamonds only found on our shopping site.</h1>
             <h2>Not for everyone!</h2>
-            <a href="#">Get a Diamond</a>
+            <a href="#trending">Get a Diamond</a>
         </div>
     </section>
 
@@ -202,7 +203,7 @@
             <li><span class="range">1$</span> <input id="defaultSlider" type="range" min="1" max="5000"> <span class="range">5000$</span></li>
             <li><p class="note">Max: <span id="currentValue">0</span> $</p></li>
         </ul>
-        <a href="#" class="filter-btn">Filter</a>
+        <a href="#side-info" class="filter-btn">Filter</a>
     </section>
 
 <!-- Trending Products Section -->
@@ -309,7 +310,7 @@
 
     <section id="news">
         <h2>Get fresh, discounted and unique SEA GOODIES items delivered right to your inbox.</h2>
-        <input type="email" name="email" class="email" placeholder="Enter your email"><a href="#">Subscribe</a><br>
+        <input type="email" name="email" class="email" placeholder="Enter your email"><a href="#news">Subscribe</a><br>
         <input type="radio" name="newsletter" id="weekly" class="preference"><label for="weekly">Weekly</label><span class="radio-space"></span>
         <input type="radio" name="newsletter" id="monthly" class="preference"><label for="monthly">Monthly</label>
     </section>
@@ -334,7 +335,7 @@
         <div>
             <h2>About</h2>
                 <ul>
-                    <li><a href="#">About Us</a></li>
+                    <li><a href="#features">About Us</a></li>
                     <li><a href="#">Our Team</a></li>
                     <li><a href="#">Careers</a></li>
                     <li><a href="#">Advertisement</a></li>
@@ -371,7 +372,7 @@
 
     <footer class="copy">
         <p>2017 &copy; SEA GOODIES, Inc. All Rights Reserved.</p>
-        <p>Made by <a href="#">Kourken K.</a></p>
+        <p>Made by <a href="index.html">Kourken K.</a></p>
     </footer>
 
 </section>
