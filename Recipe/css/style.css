@@ -1,0 +1,803 @@
+/* Main */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ededed;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    opacity: 0.9;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Navigation */
+
+@media screen and (max-width: 980px) {
+    #navigation {
+        display: none;
+    }
+
+    #nav-list {
+        display: none;
+    }
+
+    #nav {
+        z-index: 1;
+        position: relative;
+        opacity: 0.8;
+    }
+
+    #nav ul {
+        display: none;
+        width: 100%;
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #nav ul li a {
+        text-align: center;
+        display: block;
+        padding: .8em;
+        background: #ededed;
+        color: #363636;
+        font-size: 18px;
+        font-family: 'Open Sans', arial, sans-serif;
+        font-weight: 400;
+        text-decoration: none;
+        font-size: .9em;
+        opacity: 0.96;
+    }
+
+    #nav ul li a:hover {
+        background: #a8a8a8;
+        color: #ea2a25;
+        opacity: 1;
+    }
+
+    #nav input.trigger {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    #nav input.trigger:checked ~ ul, #nav input.trigger:checked ~ ul li ul {
+        display: block !important;
+    }
+
+    #nav label {
+        position: relative;
+        display: block;
+        min-height: 2em;
+        padding: .45em;
+        font-size: .9em;
+        font-family: 'Open Sans', arial, sans-serif;
+        margin: 0;
+        cursor: pointer;
+        background: #fff;
+        color: #000;
+        text-align: right!important;
+    }
+
+    #nav label:after {
+        position: absolute;
+        right: .7em;
+        top: -3px;
+        content: "\2261";
+        font-size: 2.5em;
+        font-weight: 300;
+        color: #e20400;
+    }
+
+    #nav label h1 {
+        text-align: left;
+        padding-left: 10px;
+        font-family: 'Kalam', arial, sans-serif;
+    }
+    
+    #nav label h1 a {
+        color: #ea2a25;
+    }
+}
+
+@media screen and (min-width: 981px) {
+    #nav {
+        display: none;
+    }
+
+    #navigation {
+        padding: 20px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #navigation ul li {
+        display: inline;
+        padding: 0 3px;
+        font-size: 20px;
+    }
+    
+    #navigation ul li a {
+        color: #ea2a25;
+        -webkit-transition: ease-in .5s;
+           -moz-: ease-in .5s;
+             -o-transition: ease-in .5s;
+                transition: ease-in .5s;
+    }
+    
+    #navigation ul li a:hover {
+        color: #e20400;
+    }
+
+    #navigation h1 {
+        font-size: 37px;
+        font-family: 'Kalam', arial, sans-serif;
+        font-weight: 700;
+    }
+    
+    #navigation h1 a {
+        color: #ea2a25;
+    }
+    
+    #navigation h1 span {
+        font-family: 'Open Sans', arial, sans-serif;
+        color: #106fb7;
+    }
+
+    #navigation h1 sup {
+        font-size: 17px;
+        font-family: arial, sans-serif;
+        color: #106fb7;
+    }
+
+    #navigation div:nth-child(3) a {
+        color: #ea2a25;
+    }
+
+    #navigation div:nth-child(3) a:hover {
+        color: #e20400;
+    }
+
+    #nav-list {
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px 0 25px 0;
+        border-bottom: 2px solid #ea2a25;
+    }
+
+    #nav-list ul li {
+        display: inline;
+        padding: 0 18px;
+        font-size: 18px;
+        font-family: 'Roboto Slab', arial, sans-serif;
+        font-weight: 300;
+    }
+
+    #nav-list li a {
+        padding-bottom: 20px;
+        -webkit-transition: ease-in .2s;
+           -moz-transition: ease-in .2s;
+             -o-transition: ease-in .2s;
+                transition: ease-in .2s;
+    }
+
+    #nav-list ul li a:hover {
+        color: #e20400;
+        border-bottom: 4px solid #e20400;
+        -webkit-animation:  0.4s cubic-bezier(0.950, 0.050, 0.795, 0.035) 2 forwards;
+            -moz-animation: 0.4s cubic-bezier(0.950, 0.050, 0.795, 0.035) 2 forwards;
+              -o-animation: 0.4s cubic-bezier(0.950, 0.050, 0.795, 0.035) 2 forwards;
+                animation:  0.4s cubic-bezier(0.950, 0.050, 0.795, 0.035) 2 forwards;
+    }
+}
+
+/* Banner Section Styling */
+
+#banner {
+    background: url(../images/bg-2.jpg) no-repeat center;
+    background-size: cover;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 150px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner h1 {
+    font-size: 53px;
+    font-family: 'Kalam', arial, sans-serif;
+    font-weight: 700;
+    margin-bottom: 26px;
+    color: #ea2a25;
+}
+
+#banner h1 span {
+    font-family: 'Open Sans', arial, sans-serif;
+    color: #106fb7;
+}
+
+#banner h1 sup {
+    font-size: 17px;
+    font-family: arial, sans-serif;
+    color: #106fb7;
+}
+
+#banner h2 {
+    font-size: 21px;
+    font-family: 'Kalam', arial, sans-serif;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+#banner a {
+    padding: 12px 19px;
+    font-size: 17px;
+    font-family: 'Roboto Sans', arial, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    background: #ea2a25;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    -webkit-transition: ease-in .3s;
+       -moz-transition: ease-in .3s;
+         -o-transition: ease-in .3s;
+            transition: ease-in .3s;
+}
+
+@media screen and (max-width: 720px) {
+    #banner {
+        width: 100%;
+    }
+
+    #banner h1 {
+        font-size: 38px;
+    }
+}
+
+/* Newest Recipes Section Styling */
+
+#new {
+    padding: 40px 0;
+}
+
+#new h1 {
+    text-align: center;
+    margin-bottom: 9px;
+    font-size: 39px;
+    font-family: 'Roboto Slab', arial, sans-serif;
+    font-weight: 700;
+    color: #363636;
+}
+
+#new hr {
+    width: 20%;
+    margin: 0 auto 20px auto;
+    height: 2px;
+    border: none;
+    background: #106fb7;
+}
+
+#new .flex-new {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#new .flex-new div {
+    text-align: center;
+    flex: 0 0 30%;
+    margin: 30px 0;
+    padding-bottom: 40px;
+    background: #fff;
+    border-radius: 1px;
+    -webkit-transition: ease-out .5s;
+       -moz-transition: ease-out .5s;
+         -o-transition: ease-out .5s;
+            transition: ease-out .5s;
+}
+
+#new .flex-new div:hover {
+    -webkit-transform: scale(1.1);
+       -moz-transform: scale(1.1);
+         -o-transform: scale(1.1);
+            transform: scale(1.1);
+}
+
+#new .flex-new h1 {
+    font-size: 24px;
+    font-family: 'Roboto Slab', arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0 50px;
+    color: #363636;
+}
+
+#new .flex-new h2 {
+    text-align: left;
+    font-size: 18px;
+    font-family: 'Open Sans', arial, sans-serif;
+    font-weight: 300;
+    margin: 13px 0;
+    padding-left: 20px;
+    color: #aaa;
+}
+
+#new .flex-new a {
+    font-size: 15px;
+    font-family: 'Open Sans', arial, sans-serif;
+    font-weight: 300;
+    color: #646464;
+    text-transform: uppercase;
+}
+
+#new .flex-new a:hover {
+    color: #363636;
+}
+
+#new .flex-new div:nth-child(4) a {
+    padding: 6px 12px;
+    background: #106fb7;
+    border-radius: 4px;
+    color: #fff;
+}
+
+@media screen and (max-width: 720px) {
+    #new h1 {
+        font-size: 29px;
+    }
+
+    #new hr {
+        width: 45%;
+    }
+
+    #new .flex-new {
+        flex-direction: column;   
+    }
+
+    #new .flex-new div {
+        padding-bottom: 90px;
+    }
+
+    #new .flex-new img {
+        width: 100%;
+    }
+}
+
+/* Newsletter Section Styling */
+
+#newsletter {
+    width: 100%;
+    margin: 0 auto;
+    background: #d4d4d4;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#newsletter div {
+    flex: 0 0 47%;
+    height: 500px;
+}
+
+#newsletter div:first-child {
+    background: url(../images/jane-doe.jpg) center no-repeat;
+    background-size: cover;
+}
+
+#newsletter div:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+#newsletter h1 {
+    font-size: 47px;
+    font-family: 'Kalam', arial, sans-serif;
+    font-weight: 700;
+    margin-bottom: 26px;
+    color: #ea2a25;
+}
+
+#newsletter h1 span {
+    font-family: 'Open Sans', arial, sans-serif;
+    color: #106fb7;
+}
+
+#newsletter h1 sup {
+    font-size: 13px;
+    font-family: arial, sans-serif;
+    color: #106fb7;
+}
+
+#newsletter .news {
+    font-size: 19px;
+    font-family: 'Newsletter', arial, sans-serif;
+    font-weight: 400;
+    color: #ea2a25;
+}
+
+#newsletter h2 {
+    text-align: left;
+    padding-left: 40px;
+    margin-bottom: 27px;
+    font-size: 19px;
+    font-family: 'Roboto Slab', arial, sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+#newsletter input {
+    width: 70%;
+    padding: 12px 14px;
+    font-size: 16px;
+    border: none;
+    border-radius: 2px;
+    -webkit-transition: ease-out .4s;
+       -moz-transition: ease-out .4s;
+         -o-transition: ease-out .4s;
+            transition: ease-out .4s;
+}
+
+#newsletter input:focus {
+    border-bottom: 3px solid #ea2a25;
+}
+
+#newsletter a {
+    padding: 12px 19px;
+    font-size: 17px;
+    font-family: 'Roboto Sans', arial, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    background: #106fb7;
+    color: #fff;
+    border: none;
+    -webkit-transition: ease-in .4s;
+    -moz-transition: ease-in .4s;
+      -o-transition: ease-in .4s;
+         transition: ease-in .4s;
+}
+
+@media screen and (max-width: 720px) {
+    #newsletter {
+        width: 95%;
+        flex-direction: column;
+        padding-top: 0;
+    }
+    
+    #newsletter div {
+        height: 600px;
+    }
+
+    #newsletter div:first-child {
+        background: url(../images/jane-doe-sm.jpg) center no-repeat;
+        background-size: cover;
+    }
+
+    #newsletter div:last-child {
+        padding: 0;
+    }
+    
+    #newsletter h1 {
+        text-align: center;
+        font-size: 32px;
+    }
+    
+    #newsletter .news {
+        font-size: 20px;
+    }
+    
+    #newsletter h2 {
+        padding: 0 10px;
+    }
+    
+    #newsletter input {
+        width: 90%;
+    }
+}
+
+/* Popular & Trending Recipes Section Styling */
+
+#popular {
+    text-align: center;
+    padding: 40px 0;
+}
+
+#popular h1 {
+    text-align: center;
+    margin-bottom: 9px;
+    font-size: 39px;
+    font-family: 'Roboto Slab', arial, sans-serif;
+    font-weight: 700;
+    color: #363636;
+}
+
+#popular hr {
+    width: 20%;
+    margin: 0 auto 20px auto;
+    height: 2px;
+    border: none;
+    background: #106fb7;
+}
+
+#popular .flex-popular {
+    width: 90%;
+    margin: 0 auto 40px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#popular .flex-popular div {
+    text-align: center;
+    flex: 0 0 30%;
+    margin: 30px 0;
+    padding-bottom: 40px;
+    background: #fff;
+    border-radius: 1px;
+    -webkit-transition: ease-out .5s;
+       -moz-transition: ease-out .5s;
+         -o-transition: ease-out .5s;
+            transition: ease-out .5s;
+}
+
+#popular .flex-popular div:hover {
+    -webkit-transform: scale(1.1);
+       -moz-transform: scale(1.1);
+         -o-transform: scale(1.1);
+            transform: scale(1.1);
+}
+
+#popular .flex-popular h1 {
+    font-size: 24px;
+    font-family: 'Roboto Slab', arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0 50px;
+    color: #363636;
+}
+
+#popular .flex-popular a {
+    font-size: 15px;
+    font-family: 'Open Sans', arial, sans-serif;
+    font-weight: 300;
+    color: #646464;
+    text-transform: uppercase;
+}
+
+#popular .flex-popular a:hover {
+    color: #363636;
+}
+
+#popular .load-more {
+    margin: 0 auto;
+    padding: 15px 32px;
+    font-size: 17px;
+    font-family: 'Open Sans', arial, sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    background: #106fb7;
+    color: #fff;
+    -webkit-transition: ease-in .3s;
+       -moz-transition: ease-in .3s;
+         -o-transition: ease-in .3s;
+            transition: ease-in .3s;
+}
+
+#popular .load-more i {
+    padding-left: 9px;
+}
+
+@media screen and (max-width: 720px) {
+    #popular h1 {
+        font-size: 29px;
+    }
+
+    #popular hr {
+        width: 45%;
+    }
+
+    #popular .flex-popular {
+        flex-direction: column;   
+    }
+
+    #popular .flex-popular div {
+        padding-bottom: 90px;
+    }
+
+    #popular .flex-popular img {
+        width: 100%;
+    }
+}
+
+/* Instagram Section Styling */
+
+#insta {
+    text-align: center;
+    padding: 40px 0;
+}
+
+#insta h1 {
+    text-align: center;
+    margin-bottom: 9px;
+    font-size: 39px;
+    font-family: 'Roboto Slab', arial, sans-serif;
+    font-weight: 700;
+    color: #363636;
+}
+
+#insta hr {
+    width: 20%;
+    margin: 0 auto 40px auto;
+    height: 2px;
+    border: none;
+    background: #106fb7;
+}
+
+#insta .flex-insta {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+#insta .flex-insta div {
+    flex: 0 0 17%;
+}
+
+#insta a {
+    margin: 0 auto;
+    padding: 15px 32px;
+    font-size: 17px;
+    font-family: 'Open Sans', arial, sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    background: #ea2a25;
+    color: #fff;
+    -webkit-transition: ease-out .4s;
+       -moz-transition: ease-out .4s;
+         -o-transition: ease-out .4s;
+            transition: ease-out .4s;
+}
+
+#insta a i {
+    padding-left: 7px;
+}
+
+@media screen and (min-width: 720px) and (max-width: 970px) {
+    #insta .flex-insta div {
+        flex: 0 0 31%;
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 719px) {
+    #insta .flex-insta {
+        flex-direction: column;
+    }
+
+    #insta .flex-insta div {
+        margin: 20px 0;
+    }
+
+    #insta .flex-insta img {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+/* Footer Section Styling */
+
+footer {
+    text-align: center;
+    padding: 30px 0;
+    background: #fff;
+    border-top: 4px solid #e20400;
+}
+
+footer ul {
+    margin: 17px 0 29px 0;
+}
+
+footer ul li {
+    display: inline;
+    padding: 0 5px;
+    font-size: 18px;
+    font-family: 'Roboto Slab', arial, sans-serif;
+    font-weight: 300;
+    color: #363636;
+}
+
+footer ul li:nth-child(6) {
+    padding-left: 20px;
+}
+
+footer li a:hover {
+    color: #ea2a25;
+}
+
+footer p {
+    font-size: 17px;
+    font-family: arial, sans-serif;
+    font-weight: 400;
+    color: #414141;
+}
+
+footer br {
+    display: none;
+}
+
+@media screen and (max-width: 720px) {
+    footer br {
+        display: block;
+    }
+}
+
+/* Back To Top Button Styling */
+
+#myBtn {
+	position: fixed;
+	display: block;
+	bottom: 20px;
+	right: 50px;
+	color: white;
+	width: 40px;
+	height: 40px;
+    background: #ea2a25;
+    border: none;
+	border-bottom-left-radius: 50%;
+  	border-bottom-right-radius: 50%;
+  	border-top-right-radius: 50%;
+  	border-top-left-radius: 50%;
+    opacity: 0.85;
+  	z-index: 9999;
+}
+
+#myBtn img {
+    width: 20px;
+    height: 20px;
+}
+
+@media screen and (max-width: 720px) {
+    #myBtn {
+        width: 40px;
+        height: 40px;
+        bottom: 10px;
+        right: 10px;
+        }
+
+    #myBtn img {
+        width: 19px;
+        height: 19px;
+    }
+}
