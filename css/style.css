@@ -276,3 +276,22 @@ footer ul li a {
 footer ul li a:hover {
     color: #383838;
 }
+
+@media screen and (max-width: 720px) {
+    footer {
+        padding: 15px 0;
+        flex-direction: column;
+    }
+
+    footer div {
+        margin: 15px 0;
+    }
+
+    footer div:first-child {
+        order: 2;
+    }
+
+    footer p {
+        font-size: 18px;
+    }
+}
