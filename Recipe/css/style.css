@@ -272,6 +272,7 @@ img {
 @media screen and (max-width: 720px) {
     #banner {
         width: 100%;
+	margin-top: 0;
     }
 
     #banner h1 {
