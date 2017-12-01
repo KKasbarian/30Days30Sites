@@ -9,11 +9,10 @@
 body {
     position: relative;
     text-align: center;
-    background: url(../images/bg.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url(../images/bg.jpg) no-repeat;
+    background-attachment: fixed !important;
+    background-size: cover !important;
+    background-position: center !important;
 }
 
 li {
