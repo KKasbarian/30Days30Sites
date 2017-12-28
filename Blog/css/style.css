@@ -185,6 +185,7 @@ hr {
 /* Banner and Top Article Section Styling */
 
 #banner {
+    text-align: center;
     padding-bottom: 40px;
 }
 
