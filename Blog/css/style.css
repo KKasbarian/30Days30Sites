@@ -479,6 +479,7 @@ footer .socials a:hover {
 /* Banner and Main article section */
 
 #banner-2 {
+    text-align: center;
     padding-bottom: 40px;
     width: 100%;
 }
@@ -555,7 +556,7 @@ footer .socials a:hover {
 
 @media screen and (min-width: 780px) {
     #banner-2 {
-        widows: 85%;
+        width: 85%;
     }
 
     #banner-2 .width {
