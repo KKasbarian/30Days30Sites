@@ -556,6 +556,7 @@ footer .socials a:hover {
 
 @media screen and (min-width: 780px) {
     #banner-2 {
+        margin: 0 auto;
         width: 85%;
     }
 
