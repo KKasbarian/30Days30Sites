@@ -15,9 +15,9 @@ body {
 
 @media screen and (max-width: 860px) {
     body {
-        background: url(../images/bg-sm.jpg) center no-repeat;
+        background: url(../images/bg-sm.jpg) center no-repeat !important;
         background-attachment: fixed;
-        background-size: cover;
+        background-size: cover !important;
     }
 }
 
@@ -214,6 +214,14 @@ a:hover {
     color: #fff;
     font-family: 'Karla';
     font-weight: 500;
+}
+
+@media screen and (max-width: 860px) {
+    #header {
+	background: url(../images/bg-sm.jpg) center no-repeat;
+    	background-size: cover;
+    	background-attachment: fixed;
+    }
 }
 
 /* About Section Styling */
@@ -443,7 +451,10 @@ a:hover {
 
 @media screen and (max-width: 860px) {
     #parallax {
-        height: 300px;
+        height: 500px;
+	background: url(../images/bg-sm.jpg) center no-repeat;
+    	background-size: cover;
+    	background-attachment: fixed;
     }
 }
 
