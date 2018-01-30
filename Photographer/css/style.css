@@ -9,10 +9,17 @@
 body {
     position: relative;
     text-align: center;
-    background: url(../images/bg.jpg) no-repeat;
+    background: url(../images/bg.jpg) center no-repeat;
     background-attachment: fixed !important;
     background-size: cover !important;
-    background-position: center !important;
+}
+
+@media screen and (max-width: 860px) {
+    body {
+        background: url(../images/bg-sm.jpg) center no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
 }
 
 li {
