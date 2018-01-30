@@ -444,7 +444,7 @@ a:hover {
 
 @media screen and (max-width: 860px) {
     #parallax {
-        height: 300px;
+        height: 500px;
 	background: url(../images/bg-sm.jpg) center no-repeat;
     	background-size: cover;
     	background-attachment: fixed;
