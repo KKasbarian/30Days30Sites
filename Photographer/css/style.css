@@ -16,9 +16,9 @@ body {
 
 @media screen and (max-width: 860px) {
     body {
-        background: url(../images/bg-sm.jpg) center no-repeat;
+        background: url(../images/bg-sm.jpg) center no-repeat !important;
         background-attachment: fixed;
-        background-size: cover;
+        background-size: cover !important;
     }
 }
 
