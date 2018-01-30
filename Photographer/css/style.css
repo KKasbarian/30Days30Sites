@@ -7,7 +7,6 @@
 }
 
 body {
-    position: relative;
     text-align: center;
     background: url(../images/bg.jpg) center no-repeat;
     background-attachment: fixed !important;
