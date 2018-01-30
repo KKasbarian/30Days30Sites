@@ -439,14 +439,15 @@ a:hover {
     max-width: 100%;
     width: 100%;
     height: 700px;
-    background: url(../images/bg-sm.jpg) center no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    background: transparent;
 }
 
 @media screen and (max-width: 860px) {
     #parallax {
         height: 300px;
+	background: url(../images/bg-sm.jpg) center no-repeat;
+    	background-size: cover;
+    	background-attachment: fixed;
     }
 }
 
